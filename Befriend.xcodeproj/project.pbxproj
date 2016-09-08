@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
+		BFC854621D81F6F2003E70CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC854611D81F6F2003E70CA /* ViewController.swift */; };
+		BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854631D81F6F2003E70CA /* Main.storyboard */; };
+		BFC854671D81F6F2003E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC854661D81F6F2003E70CA /* Assets.xcassets */; };
+		BFC8546A1D81F6F2003E70CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */; };
+		BFC854751D81F6F2003E70CA /* BefriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC854741D81F6F2003E70CA /* BefriendTests.swift */; };
+		BFC854801D81F6F2003E70CA /* BefriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8547F1D81F6F2003E70CA /* BefriendUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFC854711D81F6F2003E70CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC854541D81F6F1003E70CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC8545B1D81F6F1003E70CA;
+			remoteInfo = Befriend;
+		};
+		BFC8547C1D81F6F2003E70CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC854541D81F6F1003E70CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC8545B1D81F6F1003E70CA;
+			remoteInfo = Befriend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFC854611D81F6F2003E70CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC854641D81F6F2003E70CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFC854661D81F6F2003E70CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFC854691D81F6F2003E70CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFC8546B1D81F6F2003E70CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC854701D81F6F2003E70CA /* BefriendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BefriendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC854741D81F6F2003E70CA /* BefriendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BefriendTests.swift; sourceTree = "<group>"; };
+		BFC854761D81F6F2003E70CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC8547B1D81F6F2003E70CA /* BefriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BefriendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC8547F1D81F6F2003E70CA /* BefriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BefriendUITests.swift; sourceTree = "<group>"; };
+		BFC854811D81F6F2003E70CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC854591D81F6F1003E70CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC8546D1D81F6F2003E70CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC854781D81F6F2003E70CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFC854531D81F6F1003E70CA = {
+			isa = PBXGroup;
+			children = (
+				BFC8545E1D81F6F2003E70CA /* Befriend */,
+				BFC854731D81F6F2003E70CA /* BefriendTests */,
+				BFC8547E1D81F6F2003E70CA /* BefriendUITests */,
+				BFC8545D1D81F6F1003E70CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC8545D1D81F6F1003E70CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8545C1D81F6F1003E70CA /* Befriend.app */,
+				BFC854701D81F6F2003E70CA /* BefriendTests.xctest */,
+				BFC8547B1D81F6F2003E70CA /* BefriendUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC8545E1D81F6F2003E70CA /* Befriend */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
+				BFC854611D81F6F2003E70CA /* ViewController.swift */,
+				BFC854631D81F6F2003E70CA /* Main.storyboard */,
+				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
+				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
+				BFC8546B1D81F6F2003E70CA /* Info.plist */,
+			);
+			path = Befriend;
+			sourceTree = "<group>";
+		};
+		BFC854731D81F6F2003E70CA /* BefriendTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC854741D81F6F2003E70CA /* BefriendTests.swift */,
+				BFC854761D81F6F2003E70CA /* Info.plist */,
+			);
+			path = BefriendTests;
+			sourceTree = "<group>";
+		};
+		BFC8547E1D81F6F2003E70CA /* BefriendUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8547F1D81F6F2003E70CA /* BefriendUITests.swift */,
+				BFC854811D81F6F2003E70CA /* Info.plist */,
+			);
+			path = BefriendUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFC8545B1D81F6F1003E70CA /* Befriend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC854841D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "Befriend" */;
+			buildPhases = (
+				BFC854581D81F6F1003E70CA /* Sources */,
+				BFC854591D81F6F1003E70CA /* Frameworks */,
+				BFC8545A1D81F6F1003E70CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Befriend;
+			productName = Befriend;
+			productReference = BFC8545C1D81F6F1003E70CA /* Befriend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFC8546F1D81F6F2003E70CA /* BefriendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC854871D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "BefriendTests" */;
+			buildPhases = (
+				BFC8546C1D81F6F2003E70CA /* Sources */,
+				BFC8546D1D81F6F2003E70CA /* Frameworks */,
+				BFC8546E1D81F6F2003E70CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC854721D81F6F2003E70CA /* PBXTargetDependency */,
+			);
+			name = BefriendTests;
+			productName = BefriendTests;
+			productReference = BFC854701D81F6F2003E70CA /* BefriendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFC8547A1D81F6F2003E70CA /* BefriendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC8548A1D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "BefriendUITests" */;
+			buildPhases = (
+				BFC854771D81F6F2003E70CA /* Sources */,
+				BFC854781D81F6F2003E70CA /* Frameworks */,
+				BFC854791D81F6F2003E70CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC8547D1D81F6F2003E70CA /* PBXTargetDependency */,
+			);
+			name = BefriendUITests;
+			productName = BefriendUITests;
+			productReference = BFC8547B1D81F6F2003E70CA /* BefriendUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC854541D81F6F1003E70CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MisMattia;
+				TargetAttributes = {
+					BFC8545B1D81F6F1003E70CA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BFC8546F1D81F6F2003E70CA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BFC8545B1D81F6F1003E70CA;
+					};
+					BFC8547A1D81F6F2003E70CA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BFC8545B1D81F6F1003E70CA;
+					};
+				};
+			};
+			buildConfigurationList = BFC854571D81F6F1003E70CA /* Build configuration list for PBXProject "Befriend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFC854531D81F6F1003E70CA;
+			productRefGroup = BFC8545D1D81F6F1003E70CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFC8545B1D81F6F1003E70CA /* Befriend */,
+				BFC8546F1D81F6F2003E70CA /* BefriendTests */,
+				BFC8547A1D81F6F2003E70CA /* BefriendUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC8545A1D81F6F1003E70CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC8546A1D81F6F2003E70CA /* LaunchScreen.storyboard in Resources */,
+				BFC854671D81F6F2003E70CA /* Assets.xcassets in Resources */,
+				BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC8546E1D81F6F2003E70CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC854791D81F6F2003E70CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC854581D81F6F1003E70CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC854621D81F6F2003E70CA /* ViewController.swift in Sources */,
+				BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC8546C1D81F6F2003E70CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC854751D81F6F2003E70CA /* BefriendTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC854771D81F6F2003E70CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC854801D81F6F2003E70CA /* BefriendUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFC854721D81F6F2003E70CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC8545B1D81F6F1003E70CA /* Befriend */;
+			targetProxy = BFC854711D81F6F2003E70CA /* PBXContainerItemProxy */;
+		};
+		BFC8547D1D81F6F2003E70CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC8545B1D81F6F1003E70CA /* Befriend */;
+			targetProxy = BFC8547C1D81F6F2003E70CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFC854631D81F6F2003E70CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC854641D81F6F2003E70CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC854691D81F6F2003E70CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFC854821D81F6F2003E70CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFC854831D81F6F2003E70CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFC854851D81F6F2003E70CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Befriend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mismattia.Befriend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFC854861D81F6F2003E70CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Befriend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mismattia.Befriend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BFC854881D81F6F2003E70CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BefriendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Befriend.app/Befriend";
+			};
+			name = Debug;
+		};
+		BFC854891D81F6F2003E70CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BefriendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Befriend.app/Befriend";
+			};
+			name = Release;
+		};
+		BFC8548B1D81F6F2003E70CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BefriendUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Befriend;
+			};
+			name = Debug;
+		};
+		BFC8548C1D81F6F2003E70CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BefriendUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Befriend;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC854571D81F6F1003E70CA /* Build configuration list for PBXProject "Befriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC854821D81F6F2003E70CA /* Debug */,
+				BFC854831D81F6F2003E70CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC854841D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "Befriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC854851D81F6F2003E70CA /* Debug */,
+				BFC854861D81F6F2003E70CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFC854871D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "BefriendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC854881D81F6F2003E70CA /* Debug */,
+				BFC854891D81F6F2003E70CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFC8548A1D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "BefriendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC8548B1D81F6F2003E70CA /* Debug */,
+				BFC8548C1D81F6F2003E70CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFC854541D81F6F1003E70CA /* Project object */;
+}
