@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */; };
 		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
 		BFC854621D81F6F2003E70CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC854611D81F6F2003E70CA /* ViewController.swift */; };
 		BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854631D81F6F2003E70CA /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		BFC8546A1D81F6F2003E70CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */; };
 		BFC854751D81F6F2003E70CA /* BefriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC854741D81F6F2003E70CA /* BefriendTests.swift */; };
 		BFC854801D81F6F2003E70CA /* BefriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8547F1D81F6F2003E70CA /* BefriendUITests.swift */; };
+		BFE17B1D1D99C0080096DBFB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE17B1A1D99C0080096DBFB /* FBSDKCoreKit.framework */; };
+		BFE17B1E1D99C0080096DBFB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE17B1B1D99C0080096DBFB /* FBSDKLoginKit.framework */; };
+		BFE17B1F1D99C0080096DBFB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE17B1C1D99C0080096DBFB /* FBSDKShareKit.framework */; };
+		BFE17B231D99CE380096DBFB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE17B221D99CE380096DBFB /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC854611D81F6F2003E70CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,11 @@
 		BFC8547B1D81F6F2003E70CA /* BefriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BefriendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC8547F1D81F6F2003E70CA /* BefriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BefriendUITests.swift; sourceTree = "<group>"; };
 		BFC854811D81F6F2003E70CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE17B1A1D99C0080096DBFB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		BFE17B1B1D99C0080096DBFB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BFE17B1C1D99C0080096DBFB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		BFE17B211D99C5630096DBFB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Befriend/Bridging-Header.h"; sourceTree = "<group>"; };
+		BFE17B221D99CE380096DBFB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE17B1E1D99C0080096DBFB /* FBSDKLoginKit.framework in Frameworks */,
+				BFE17B1D1D99C0080096DBFB /* FBSDKCoreKit.framework in Frameworks */,
+				BFE17B1F1D99C0080096DBFB /* FBSDKShareKit.framework in Frameworks */,
+				BFE17B231D99CE380096DBFB /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 		BFC854531D81F6F1003E70CA = {
 			isa = PBXGroup;
 			children = (
+				BFE17B211D99C5630096DBFB /* Bridging-Header.h */,
 				BFC8545E1D81F6F2003E70CA /* Befriend */,
 				BFC854731D81F6F2003E70CA /* BefriendTests */,
 				BFC8547E1D81F6F2003E70CA /* BefriendUITests */,
@@ -100,9 +116,14 @@
 				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
 				BFC854611D81F6F2003E70CA /* ViewController.swift */,
 				BFC854631D81F6F2003E70CA /* Main.storyboard */,
+				BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */,
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
 				BFC8546B1D81F6F2003E70CA /* Info.plist */,
+				BFE17B221D99CE380096DBFB /* Bolts.framework */,
+				BFE17B1A1D99C0080096DBFB /* FBSDKCoreKit.framework */,
+				BFE17B1B1D99C0080096DBFB /* FBSDKLoginKit.framework */,
+				BFE17B1C1D99C0080096DBFB /* FBSDKShareKit.framework */,
 			);
 			path = Befriend;
 			sourceTree = "<group>";
@@ -188,18 +209,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = MisMattia;
 				TargetAttributes = {
 					BFC8545B1D81F6F1003E70CA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 					BFC8546F1D81F6F2003E70CA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = BFC8545B1D81F6F1003E70CA;
 					};
 					BFC8547A1D81F6F2003E70CA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = BFC8545B1D81F6F1003E70CA;
 					};
 				};
@@ -258,6 +282,7 @@
 			files = (
 				BFC854621D81F6F2003E70CA /* ViewController.swift in Sources */,
 				BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */,
+				BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +351,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -353,6 +380,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Befriend/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -371,8 +399,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -391,6 +421,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Befriend/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -399,10 +431,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Befriend/Frameworks",
+				);
 				INFOPLIST_FILE = Befriend/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mismattia.Befriend;
+				PRODUCT_BUNDLE_IDENTIFIER = mizmattia.Befriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -410,10 +449,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Befriend/Frameworks",
+				);
 				INFOPLIST_FILE = Befriend/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mismattia.Befriend;
+				PRODUCT_BUNDLE_IDENTIFIER = mizmattia.Befriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Befriend.app/Befriend";
 			};
 			name = Debug;
@@ -437,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Befriend.app/Befriend";
 			};
 			name = Release;
@@ -448,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Befriend;
 			};
 			name = Debug;
@@ -459,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mismattia.BefriendUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Befriend;
 			};
 			name = Release;
@@ -482,6 +532,7 @@
 				BFC854861D81F6F2003E70CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC854871D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "BefriendTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +541,7 @@
 				BFC854891D81F6F2003E70CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC8548A1D81F6F2003E70CA /* Build configuration list for PBXNativeTarget "BefriendUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +550,7 @@
 				BFC8548C1D81F6F2003E70CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
