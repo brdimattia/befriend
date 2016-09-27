@@ -37,7 +37,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             self.view.addSubview(loginView)
             loginView.center = self.view.center
-            loginView.readPermissions = ["public_profile", "email", "user_friends", "user_birthday", "user_managed_groups", "user_relationships", "user_work_history", "read_custom_friendlists", ]
+            loginView.readPermissions = ["public_profile", "email", "user_friends", "user_birthday", "user_managed_groups", "user_relationships", "user_work_history", "read_custom_friendlists"]
             loginView.delegate = self
         }
     }
@@ -51,13 +51,43 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
         if ((error) != nil)
         {
             // Process error
+            print(error)
         }
         else if result.isCancelled {
             // Handle cancellations
+            print("user cancelled login")
         }
         else {
             // If you ask for multiple permissions at once, you
             // should check if specific permissions missing
+            if result.grantedPermissions.contains("public_profile")
+            {
+                // Do work
+            }
+            if result.grantedPermissions.contains("email")
+            {
+                // Do work
+            }
+            if result.grantedPermissions.contains("email")
+            {
+                // Do work
+            }
+            if result.grantedPermissions.contains("email")
+            {
+                // Do work
+            }
+            if result.grantedPermissions.contains("email")
+            {
+                // Do work
+            }
+            if result.grantedPermissions.contains("email")
+            {
+                // Do work
+            }
+            if result.grantedPermissions.contains("email")
+            {
+                // Do work
+            }
             if result.grantedPermissions.contains("email")
             {
                 // Do work
