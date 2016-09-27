@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */; };
 		BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */; };
 		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
-		BFC854621D81F6F2003E70CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC854611D81F6F2003E70CA /* ViewController.swift */; };
 		BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854631D81F6F2003E70CA /* Main.storyboard */; };
 		BFC854671D81F6F2003E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC854661D81F6F2003E70CA /* Assets.xcassets */; };
 		BFC8546A1D81F6F2003E70CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */; };
@@ -39,10 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFC854611D81F6F2003E70CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFC854641D81F6F2003E70CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFC854661D81F6F2003E70CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC854691D81F6F2003E70CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,11 +114,11 @@
 			children = (
 				BFE17B211D99C5630096DBFB /* Bridging-Header.h */,
 				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
-				BFC854611D81F6F2003E70CA /* ViewController.swift */,
 				BFC854631D81F6F2003E70CA /* Main.storyboard */,
 				BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */,
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
+				BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */,
 				BFC8546B1D81F6F2003E70CA /* Info.plist */,
 				BFE17B221D99CE380096DBFB /* Bolts.framework */,
 				BFE17B1A1D99C0080096DBFB /* FBSDKCoreKit.framework */,
@@ -280,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC854621D81F6F2003E70CA /* ViewController.swift in Sources */,
+				BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */,
 				BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */,
 				BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */,
 			);
