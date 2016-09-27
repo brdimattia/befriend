@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUr-ND-5Wz">
                                 <frame key="frameInset" minY="138" width="375" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login to Facebook"/>
+                                <state key="normal" title="Get Facebook Data"/>
                                 <connections>
                                     <action selector="facebookLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="GNa-Qe-0qA"/>
                                 </connections>

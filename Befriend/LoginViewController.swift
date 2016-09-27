@@ -16,6 +16,9 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
     
     @IBAction func facebookLoginButton(sender: AnyObject) {
         
+        let facebookWrapper : FacebookWrapper =  FacebookWrapper()
+        facebookWrapper.returnUserData()
+        
         
     }
     
@@ -58,39 +61,70 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
             print("user cancelled login")
         }
         else {
-            // If you ask for multiple permissions at once, you
-            // should check if specific permissions missing
+            //Checks if changes made by user to permissions allowed for future errors
             if result.grantedPermissions.contains("public_profile")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
             if result.grantedPermissions.contains("email")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
-            if result.grantedPermissions.contains("email")
+            if result.grantedPermissions.contains("user_friends")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
-            if result.grantedPermissions.contains("email")
+            if result.grantedPermissions.contains("user_birthday")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
-            if result.grantedPermissions.contains("email")
+            if result.grantedPermissions.contains("user_managed_groups")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
-            if result.grantedPermissions.contains("email")
+            if result.grantedPermissions.contains("user_relationships")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
-            if result.grantedPermissions.contains("email")
+            if result.grantedPermissions.contains("user_work_history")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
-            if result.grantedPermissions.contains("email")
+            if result.grantedPermissions.contains("read_custom_friendlists")
             {
+                
                 // Do work
+            }else{
+                
+                //Handle
             }
         }
     }
@@ -101,29 +135,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
         print("User Logged Out")
     }
     
-    func returnUserData()
-    {
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
-        graphRequest.start(completionHandler: { (connection, result, error) -> Void in
-            
-            let data:[String:AnyObject] = result as! [String : AnyObject]
-            
-            if ((error) != nil)
-            {
-                // Process error
-                print("Error: \(error)")
-            }
-            else
-            {
-                print("fetched user: \(result)")
-                let userName : NSString = data["name"]! as! NSString
-                print("User Name is: \(userName)")
-                let userEmail : NSString = data["email"]! as! NSString
-                print("User Email is: \(userEmail)")
-            }
-        })
-    }
-    
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
