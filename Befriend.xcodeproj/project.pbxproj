@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterWrapper.swift; path = Befriend/TwitterWrapper.swift; sourceTree = "<group>"; };
+		8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterWrapper.swift; sourceTree = "<group>"; };
 		BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +94,6 @@
 		BFC854531D81F6F1003E70CA = {
 			isa = PBXGroup;
 			children = (
-				8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */,
 				BFC8545E1D81F6F2003E70CA /* Befriend */,
 				BFC854731D81F6F2003E70CA /* BefriendTests */,
 				BFC8547E1D81F6F2003E70CA /* BefriendUITests */,
@@ -117,6 +116,7 @@
 			children = (
 				BFE17B211D99C5630096DBFB /* Bridging-Header.h */,
 				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
+				8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */,
 				BFC854631D81F6F2003E70CA /* Main.storyboard */,
 				BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */,
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
