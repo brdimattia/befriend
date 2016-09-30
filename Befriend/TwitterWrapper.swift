@@ -14,19 +14,19 @@ import TwitterKit
 
 class TwitterWrapper{
     
-    func logIn(){
-        Twitter.sharedInstance().start(withConsumerKey: "QJGRPjBbsOTJXbojwbg2jBrK0", consumerSecret: "SpQ0bkorYmSA0Q16yhSKmn0Qg2AhY37p32wnBeCxlpNWkLUZlK")
-        Fabric.with([Twitter.self()])
-        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
-            if (session != nil) {
-                print("signed in as \(session?.userName)");
-            } else {
-                print("error: \(error?.localizedDescription)");
-            }
-        })
-        logInButton.center = self.view.center
-        self.view.addSubview(logInButton)
-    }
+//    func logIn(){
+//        Twitter.sharedInstance().start(withConsumerKey: "QJGRPjBbsOTJXbojwbg2jBrK0", consumerSecret: "SpQ0bkorYmSA0Q16yhSKmn0Qg2AhY37p32wnBeCxlpNWkLUZlK")
+//        Fabric.with([Twitter.self()])
+//        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
+//            if (session != nil) {
+//                print("signed in as \(session?.userName)");
+//            } else {
+//                print("error: \(error?.localizedDescription)");
+//            }
+//        })
+//        logInButton.center = self.view.center
+//        self.view.addSubview(logInButton)
+//    }
     
     
     func followRequest(){
