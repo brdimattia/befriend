@@ -37,6 +37,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
         Fabric.with([Twitter.self()])
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
             if (session != nil) {
+                
                 print("signed in as \(session?.userName)");
             } else {
                 print("error: \(error?.localizedDescription)");
@@ -152,9 +153,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
     }
     
     
-    func twitterLogIn(){
-            }
-        
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
