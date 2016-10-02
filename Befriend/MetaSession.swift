@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import UIKit
+import Fabric
+import TwitterKit
 
 
 class MetaSession{
     
     
     struct twitterSession {
-        var session : = nil;
-        init() {
+        var session : TWTRSession? = nil;
+        init(loginInstance : TWTRSession ) {
             session = loginInstance
         }
     }

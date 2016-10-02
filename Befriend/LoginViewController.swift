@@ -37,7 +37,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate{
         Fabric.with([Twitter.self()])
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
             if (session != nil) {
-                
+                var twtSession = MetaSession.twitterSession(loginInstance : session!);
                 print("signed in as \(session?.userName)");
             } else {
                 print("error: \(error?.localizedDescription)");
