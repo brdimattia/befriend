@@ -30,6 +30,14 @@ class TwitterWrapper{
     
     
     func followRequest(){
+     //   if Twitter.sharedInstance().session() != nil {
+            var url = "https://dev.twitter.com/rest/reference/post/friendships/create"
+            var parameters = Dictionary<String, String>()
+            var parameters["screen_name"] = "dmisiaszek"
+            var parameters["follow"] = "true"
+            var error: NSError?
+            var request = Twitter.sharedInstance().APIClient.URLRequestWithMethod("POST", URL: url, parameters: parameters, error: &error)
+        
 //        var request = URLRequest(url: URL(string: "https://api.twitter.com/1.1/friendships/create.json?")!)
 //        request.httpMethod = "POST"
 //        let postString = "screen_name=BefriendDani&follow=true"
