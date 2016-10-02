@@ -18,20 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUr-ND-5Wz">
-                                <frame key="frameInset" minY="138" width="375" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get Facebook Data"/>
-                                <connections>
-                                    <action selector="facebookLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="GNa-Qe-0qA"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5d-fW-qGN">
                                 <frame key="frameInset" width="375" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login to Twitter"/>
+                                <state key="normal" title="Follow Danielle"/>
                                 <connections>
-                                    <action selector="twitterLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="C5F-7R-9bv"/>
+                                    <action selector="twitterLoginButtonWithSender:" destination="JAg-O3-th1" eventType="touchUpInside" id="V4f-2L-NT4"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -15,11 +15,13 @@ import TwitterKit
 class MetaSession{
     
     
-    struct twitterSession {
-        var session : TWTRSession? = nil;
-        init(loginInstance : TWTRSession ) {
-            session = loginInstance
-        }
+    var twtSession : TWTRSession?;
+    
+    
+    init(){
+        self.twtSession = nil;
     }
+    
+    
     
 }
