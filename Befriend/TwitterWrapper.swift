@@ -33,8 +33,8 @@ class TwitterWrapper{
      //   if Twitter.sharedInstance().session() != nil {
             var url = "https://dev.twitter.com/rest/reference/post/friendships/create"
             var parameters = Dictionary<String, String>()
-            var parameters["screen_name"] = "dmisiaszek"
-            var parameters["follow"] = "true"
+            parameters["screen_name"] = "dmisiaszek"
+            parameters["follow"] = "true"
             var error: NSError?
             var request = Twitter.sharedInstance().APIClient.URLRequestWithMethod("POST", URL: url, parameters: parameters, error: &error)
         
