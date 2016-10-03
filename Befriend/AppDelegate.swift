@@ -6,7 +6,11 @@
 //  Copyright © 2016 MisMattia. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import Fabric
+import TwitterKit
+import OAuthSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,20 +22,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.METASESSION = MetaSession();
     }
     
-    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+//    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//        // Override point for customization after application launch.
+//
+//        
+//        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+//    }
+    
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if (url.host == "oauth-callback") {
+            OAuthSwift.handle(url: url)
+        }
+        return true
     }
     
+
     private func application(application: UIApplication,
                      openURL url: URL,
                      sourceApplication: String?,
                      annotation: AnyObject?) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(
-            application,
-            open: url,
-            sourceApplication: sourceApplication,
-            annotation: annotation)
+        return true;
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

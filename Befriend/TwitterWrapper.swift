@@ -10,40 +10,38 @@ import Foundation
 import UIKit
 import Fabric
 import TwitterKit
+import OAuthSwift
 
 
 class TwitterWrapper{
     
-//    func logIn(){
-//        Twitter.sharedInstance().start(withConsumerKey: "QJGRPjBbsOTJXbojwbg2jBrK0", consumerSecret: "SpQ0bkorYmSA0Q16yhSKmn0Qg2AhY37p32wnBeCxlpNWkLUZlK")
-//        Fabric.with([Twitter.self()])
-//        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
-//            if (session != nil) {
-//                print("signed in as \(session?.userName)");
-//            } else {
-//                print("error: \(error?.localizedDescription)");
-//            }
-//        })
-//        logInButton.center = self.view.center
-//        self.view.addSubview(logInButton)
-//    }
     
     
-    func followRequest(){
-     //   if Twitter.sharedInstance().session() != nil {
-            var url = "https://dev.twitter.com/rest/reference/post/friendships/create"
-            var parameters = Dictionary<String, String>()
-            parameters["screen_name"] = "dmisiaszek"
-            parameters["follow"] = "true"
-            var error: NSError?
-            var request = Twitter.sharedInstance().APIClient.URLRequestWithMethod("POST", URL: url, parameters: parameters, error: &error)
+    func followRequest(_ oauthswift: OAuth1Swift){
         
+        var params = Dictionary<String, String>()
+        params["screen_name"] = "dmisiaszek"
+        params["follow"] = "true"
+        
+        let _ = oauthswift.client.get("https://api.twitter.com/1.1/friendships/create.json?", parameters: params, headers: [:],
+                              success: { data, response in
+                                let dataString = String(data: data, encoding: String.Encoding.utf8)
+                                print(dataString)
+            },
+                              failure: { error in
+                                print(error)
+            }
+        )
+        
+
+        
+      
 //        var request = URLRequest(url: URL(string: "https://api.twitter.com/1.1/friendships/create.json?")!)
 //        request.httpMethod = "POST"
-//        let postString = "screen_name=BefriendDani&follow=true"
+//        let postString = "screen_name=dmisiaszek&follow=true"
 //        request.httpBody = postString.data(using: .utf8)
 //        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+//            guard let data = data, error == nil else {                                       // check for fundamental networking error
 //                print("error=\(error)")
 //                return
 //            }
@@ -57,5 +55,6 @@ class TwitterWrapper{
 //            print("responseString = \(responseString)")
 //        }
 //        task.resume()
-    }
+//    }
+}
 }
