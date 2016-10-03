@@ -21,6 +21,7 @@ class MetaSession{
     
     var oAuthSwiftTwitter : OAuth1Swift;
     var oAuthSwiftFacebook : OAuth2Swift;
+    var oAuthSwiftLinkedin : OAuth1Swift;
     
     init(){
         self.twtSession = nil;
@@ -37,6 +38,13 @@ class MetaSession{
             authorizeUrl:   "https://www.facebook.com/dialog/oauth",
             accessTokenUrl: "https://graph.facebook.com/oauth/access_token",
             responseType:   "code"
+        )
+        oAuthSwiftLinkedin = OAuth1Swift(
+            consumerKey:    "********",
+            consumerSecret: "********",
+            requestTokenUrl: "https://api.linkedin.com/uas/oauth/requestToken",
+            authorizeUrl:    "https://api.linkedin.com/uas/oauth/authenticate",
+            accessTokenUrl:  "https://api.linkedin.com/uas/oauth/accessToken"
         )
     }
     

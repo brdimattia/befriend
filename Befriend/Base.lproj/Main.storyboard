@@ -33,15 +33,27 @@
                                     <action selector="facebookLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="q49-sV-Pch"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-ff-kxh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="ItN-hm-WhN"/>
+                                </constraints>
+                                <state key="normal" title="Login to Linkedin"/>
+                                <connections>
+                                    <action selector="linkedinLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="lOn-fh-mWb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Zgh-ff-kxh" firstAttribute="leading" secondItem="3Yz-2k-Zrn" secondAttribute="leading" id="CJ4-58-heh"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="leading" secondItem="k5d-fW-qGN" secondAttribute="leading" id="DKm-IM-yj1"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="trailing" secondItem="k5d-fW-qGN" secondAttribute="trailing" id="K2O-KI-tIW"/>
+                            <constraint firstItem="Zgh-ff-kxh" firstAttribute="trailing" secondItem="3Yz-2k-Zrn" secondAttribute="trailing" id="KpG-Bl-VOR"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="top" secondItem="dz8-oD-oc5" secondAttribute="top" constant="157" id="R6l-PG-bd6"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="top" secondItem="k5d-fW-qGN" secondAttribute="bottom" constant="8" id="lrx-5b-U6V"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="leading" secondItem="dz8-oD-oc5" secondAttribute="leading" id="nHk-Lt-Ryg"/>
                             <constraint firstAttribute="trailing" secondItem="3Yz-2k-Zrn" secondAttribute="trailing" id="ngL-Uf-Jqj"/>
+                            <constraint firstItem="Zgh-ff-kxh" firstAttribute="top" secondItem="3Yz-2k-Zrn" secondAttribute="bottom" constant="-47" id="wZn-a7-cWo"/>
                         </constraints>
                     </view>
                 </viewController>

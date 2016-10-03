@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/MetaSession.swift"
-            timestampString = "497214721.071418"
+            timestampString = "497226251.411283"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/MetaSession.swift"
-            timestampString = "497214721.071418"
+            timestampString = "497226251.411283"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
