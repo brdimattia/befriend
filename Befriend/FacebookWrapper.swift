@@ -7,32 +7,22 @@
 //
 
 import Foundation
+import OAuthSwift
 
 class FacebookWrapper{
     
-    func returnUserData()
-    {
-        //GET USER DATA
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
-        graphRequest.start(completionHandler: { (connection, result, error) -> Void in
-            
-            let data:[String:AnyObject] = result as! [String : AnyObject]
-            
-            if ((error) != nil)
-            {
-                // Process error
-                print("Error: \(error)")
+    func friendRequest(_ oauthswift: OAuth2Swift){
+        let _ = oauthswift.client.get(
+            "https://graph.facebook.com/me?",
+            success: { data, response in
+                let dataString = String(data: data, encoding: String.Encoding.utf8)
+                print(dataString)
+            }, failure: { error in
+                print(error)
             }
-            else
-            {
-                print("fetched user: \(result)")
-                let userName : NSString = data["name"]! as! NSString
-                print("User Name is: \(userName)")
-                let userEmail : NSString = data["email"]! as! NSString
-                print("User Email is: \(userEmail)")
-            }
-        })
+        )
     }
+
 
     
     

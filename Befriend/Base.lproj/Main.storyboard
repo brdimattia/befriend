@@ -18,21 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5d-fW-qGN">
-                                <frame key="frameInset" width="375" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Follow Danielle"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5d-fW-qGN">
+                                <state key="normal" title="Login To Twitter"/>
                                 <connections>
                                     <action selector="twitterLoginButtonWithSender:" destination="JAg-O3-th1" eventType="touchUpInside" id="V4f-2L-NT4"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9W-0g-Ioa">
-                                <frame key="frameInset" minX="67" minY="346" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-2k-Zrn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="z8T-fs-gB6"/>
+                                </constraints>
+                                <state key="normal" title="Login to Facebook"/>
+                                <connections>
+                                    <action selector="facebookLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="q49-sV-Pch"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Yz-2k-Zrn" firstAttribute="leading" secondItem="k5d-fW-qGN" secondAttribute="leading" id="DKm-IM-yj1"/>
+                            <constraint firstItem="3Yz-2k-Zrn" firstAttribute="trailing" secondItem="k5d-fW-qGN" secondAttribute="trailing" id="K2O-KI-tIW"/>
+                            <constraint firstItem="3Yz-2k-Zrn" firstAttribute="top" secondItem="dz8-oD-oc5" secondAttribute="top" constant="157" id="R6l-PG-bd6"/>
+                            <constraint firstItem="3Yz-2k-Zrn" firstAttribute="top" secondItem="k5d-fW-qGN" secondAttribute="bottom" constant="8" id="lrx-5b-U6V"/>
+                            <constraint firstItem="3Yz-2k-Zrn" firstAttribute="leading" secondItem="dz8-oD-oc5" secondAttribute="leading" id="nHk-Lt-Ryg"/>
+                            <constraint firstAttribute="trailing" secondItem="3Yz-2k-Zrn" secondAttribute="trailing" id="ngL-Uf-Jqj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYu-Lk-Xse" userLabel="First Responder" sceneMemberID="firstResponder"/>

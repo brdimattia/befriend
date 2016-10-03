@@ -15,46 +15,20 @@ import OAuthSwift
 
 class TwitterWrapper{
     
-    
-    
-    func followRequest(_ oauthswift: OAuth1Swift){
-        
+    //Makes a follow request to screenName over the verified Authentication request
+    func followRequest(_ oauthswift: OAuth1Swift, screenName: String){
         var params = Dictionary<String, String>()
-        params["screen_name"] = "dmisiaszek"
         params["follow"] = "true"
-        
-        let _ = oauthswift.client.get("https://api.twitter.com/1.1/friendships/create.json?", parameters: params, headers: [:],
-                              success: { data, response in
-                                let dataString = String(data: data, encoding: String.Encoding.utf8)
-                                print(dataString)
-            },
-                              failure: { error in
-                                print(error)
+        params["screen_name"] = screenName
+        let _ =  oauthswift.client.post("https://api.twitter.com/1.1/friendships/create.json", parameters: params,
+                    success: { data, response in
+                        let dataString = String(data: data, encoding: String.Encoding.utf8)
+                        print("datastring", dataString)
+                            },
+                    failure: { error in
+                        print("the error is" , error)
             }
         )
-        
 
-        
-      
-//        var request = URLRequest(url: URL(string: "https://api.twitter.com/1.1/friendships/create.json?")!)
-//        request.httpMethod = "POST"
-//        let postString = "screen_name=dmisiaszek&follow=true"
-//        request.httpBody = postString.data(using: .utf8)
-//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//            guard let data = data, error == nil else {                                       // check for fundamental networking error
-//                print("error=\(error)")
-//                return
-//            }
-//            
-//            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
-//                print("statusCode should be 200, but is \(httpStatus.statusCode)")
-//                print("response = \(response)")
-//            }
-//            
-//            let responseString = String(data: data, encoding: .utf8)
-//            print("responseString = \(responseString)")
-//        }
-//        task.resume()
-//    }
 }
 }

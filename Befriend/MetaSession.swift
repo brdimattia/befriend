@@ -19,16 +19,24 @@ class MetaSession{
     
     var twtSession : TWTRSession?;
     
-    var oAuthSwift : OAuth1Swift;
+    var oAuthSwiftTwitter : OAuth1Swift;
+    var oAuthSwiftFacebook : OAuth2Swift;
     
     init(){
         self.twtSession = nil;
-        oAuthSwift = OAuth1Swift(
+        oAuthSwiftTwitter = OAuth1Swift(
             consumerKey:    "********",
             consumerSecret: "********",
             requestTokenUrl: "https://api.twitter.com/oauth/request_token",
             authorizeUrl:    "https://api.twitter.com/oauth/authorize",
             accessTokenUrl:  "https://api.twitter.com/oauth/access_token"
+        )
+        oAuthSwiftFacebook = OAuth2Swift(
+            consumerKey:    "********",
+            consumerSecret: "********",
+            authorizeUrl:   "https://www.facebook.com/dialog/oauth",
+            accessTokenUrl: "https://graph.facebook.com/oauth/access_token",
+            responseType:   "code"
         )
     }
     

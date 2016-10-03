@@ -14,7 +14,6 @@
 		8E1273971D9D9FD100312789 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1273931D9D9FD100312789 /* TwitterCore.framework */; };
 		BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */; };
 		BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */; };
-		BF896AA41DA22970000C9001 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AA31DA22970000C9001 /* WebViewController.swift */; };
 		BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */; };
 		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
 		BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854631D81F6F2003E70CA /* Main.storyboard */; };
@@ -110,7 +109,6 @@
 		BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaSession.swift; sourceTree = "<group>"; };
 		BF896A721DA1CE11000C9001 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = "/Users/brdimattia/Desktop/OAuthSwift-master/OAuthSwift.xcodeproj"; sourceTree = "<absolute>"; };
-		BF896AA31DA22970000C9001 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
 				8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */,
 				BFC854631D81F6F2003E70CA /* Main.storyboard */,
-				BF896AA31DA22970000C9001 /* WebViewController.swift */,
 				BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */,
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
@@ -454,7 +451,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */,
-				BF896AA41DA22970000C9001 /* WebViewController.swift in Sources */,
 				BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */,
 				BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */,
 				BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */,

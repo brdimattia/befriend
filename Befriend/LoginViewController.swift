@@ -14,54 +14,10 @@ import OAuthSwift
 
 class LoginViewController: UIViewController{
     
-    
+    let appDelegate = UIApplication.shared.delegate as!AppDelegate
     
     @IBAction func twitterLoginButton(sender: AnyObject) {
-        let appDelegate = UIApplication.shared.delegate as!AppDelegate
-        //print("signed in as \(appDelegate.METASESSION.twtSession?.userName)");
-        //let twtWrapper = TwitterWrapper()
-        //twtWrapper.followRequest(appDelegate.METASESSION.oAuthSwift);
-        
-        var params = Dictionary<String, String>()
-        params["follow"] = "true"
-        params["screen_name"] = "dmisiaszek"
-        let _ =  appDelegate.METASESSION.oAuthSwift.client.post("https://api.twitter.com/1.1/friendships/create.json", parameters: params,
-                                    success: { data, response in
-                                        let dataString = String(data: data, encoding: String.Encoding.utf8)
-                                        print("datastring", dataString)
-            },
-                                    failure: { error in
-                                        print("the error is" , error)
-            }
-        )
-       
-    }
-    
-    
-    
-
-
-
-    
-
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let appDelegate = UIApplication.shared.delegate as!AppDelegate
-//        let appDelegate = UIApplication.shared.delegate as!AppDelegate
-//        Twitter.sharedInstance().start(withConsumerKey: "QJGRPjBbsOTJXbojwbg2jBrK0", consumerSecret: "SpQ0bkorYmSA0Q16yhSKmn0Qg2AhY37p32wnBeCxlpNWkLUZlK")
-//        Fabric.with([Twitter.self()])
-//        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
-//            if (session != nil) {
-//                appDelegate.METASESSION.twtSession = session;
-//                print("signed in as \(session?.userName)");
-//            } else {
-//                print("error: \(error?.localizedDescription)");
-//            }
-//        })
-//        logInButton.center = self.view.center
-//        self.view.addSubview(logInButton)
-        
+        //LOGIN TO TWITTER
         
         // create an instance and retain it
         let ooswift = OAuth1Swift(
@@ -72,53 +28,67 @@ class LoginViewController: UIViewController{
             accessTokenUrl:  "https://api.twitter.com/oauth/access_token"
         )
         
-        
         let _ = ooswift.authorize(
             withCallbackURL: URL(string: "befriend://oauth-callback/twitter")!,
             success: { credential, response, parameters in
-                print("The username is: " , parameters["user_id"])
-                print(credential.oauthToken);
-                print(credential.oauthTokenSecret);
-                //self.testTwitter(ooswift: ooswift);
+                print("Authenticted with Service <Twitter>")
             },
             failure: { error in
-                print("The error is: " , error.localizedDescription)
+                print("Twitter error is: " , error.localizedDescription)
             }
         )
+        appDelegate.METASESSION.oAuthSwiftTwitter = ooswift;
         
-        appDelegate.METASESSION.oAuthSwift = ooswift;
-       
-       
-
         
-       }
+        //let twtrWrapper : TwitterWrapper = TwitterWrapper()
+        //twtrWrapper.followRequest(appDelegate.METASESSION.oAuthSwiftTwitter, screenName: "BefriendBen");
     
-    
-    func testTwitter(ooswift: OAuth1Swift){
-//        let _ = ooswift.client.get(
-//            "https://api.twitter.com/1.1/followers/ids.json", parameters: [:],
-//            success: { data, response in
-//                let jsonDict = try? JSONSerialization.jsonObject(with:data, options: [])
-//                print("statuses", jsonDict)
-//            }, failure: { error in
-//                print("theerroris:" , error)
-//            }
-//        )
-        
-                var params = Dictionary<String, String>()
-                params["follow"] = "true"
-                params["screen_name"] = "dmisiaszek"
-                let _ = ooswift.client.post("https://api.twitter.com/1.1/friendships/create.json", parameters: params,
-                                              success: { data, response in
-                                                let dataString = String(data: data, encoding: String.Encoding.utf8)
-                                                print("datastring", dataString)
-                    },
-                                              failure: { error in
-                                                print("the error is" , error)
-                    }
-                )
     }
     
+    
+    @IBAction func facebookLoginButton(_ sender: AnyObject) {
+        //LOGIN TO Facebook
+        
+        // create an instance and retain it
+        let ooswift = OAuth2Swift(
+            consumerKey:    "1794801960757679",
+            consumerSecret: "412e4d01c57084432f273bb6db11be27",
+            authorizeUrl:   "https://www.facebook.com/dialog/oauth",
+            accessTokenUrl: "https://graph.facebook.com/oauth/access_token",
+            responseType:   "code"
+        )
+        let state = generateState(withLength: 20)
+        
+        let _ = ooswift.authorize(
+            withCallbackURL: URL(string: "https://befriend-mizmattia.herokuapp.com/")!, scope: "public_profile", state: state,
+            success: { credential, response, parameters in
+                print("Authenticted with Service <Facebook>")
+                
+            }, failure: { error in
+                print("Facebook error is: " , error.localizedDescription, terminator: "")
+            }
+        )
+        appDelegate.METASESSION.oAuthSwiftFacebook = ooswift;
+        
+        
+        //let fbWrapper : FacebookWrapper = FacebookWrapper()
+        //fbWrapper.friendRequest(appDelegate.METASESSION.oAuthSwiftFacebook);
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        
+        
+       }
     
         override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
