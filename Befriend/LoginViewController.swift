@@ -15,11 +15,36 @@ import OAuthSwift
 class LoginViewController: UIViewController{
     
     let appDelegate = UIApplication.shared.delegate as!AppDelegate
-    
+    @IBAction func LogintoInsta(_ sender: AnyObject) {
+        let oauthswift = OAuth2Swift(
+            consumerKey:    "3d4fca2662944a0193f555c2f7f79258",
+            consumerSecret: "44f87746f9b1460388b95eaaddbc494a",
+            authorizeUrl:   "https://api.instagram.com/oauth/authorize",
+            responseType:   "token"
+            // or
+            // accessTokenUrl: "https://api.instagram.com/oauth/access_token",
+            // responseType:   "code"
+        )
+        
+        let state = generateState(withLength: 20)
+        self.oauthswift = oauthswift
+        oauthswift.authorizeURLHandler = getURLHandler()
+        let _ = oauthswift.authorize(
+            withCallbackURL: URL(string: "oauth-swift://oauth-callback/instagram")!, scope: "relationships", state:state,
+            success: { credential, response, parameters in
+                self.showTokenAlert(name: serviceParameters["name"], credential: credential)
+            },
+            failure: { error in
+                print(error.description)
+            }
+        )
+
+    }
     @IBAction func twitterLoginButton(sender: AnyObject) {
         //LOGIN TO TWITTER
         
         // create an instance and retain it
+
         let otoswift = OAuth1Swift(
             consumerKey:    "5CKNUpJHS116KSHiyR5Y1Q305",
             consumerSecret: "B8votVYdSPFp5jJqIPdsKQjlF0jmXbWZVIBNZ3FLIac2ZFGV8u",

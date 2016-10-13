@@ -12,7 +12,7 @@ import OAuthSwift
 
 
 class InstaWrapper{
-    doOAuthInstagram(parameters)
+    
     //Makes a follow request to screenName over the verified Authentication request
     func followRequest(_ oauthswift: OAuth1Swift, screenName: String){
         UIApplication.sharedApplication().openURL(NSURL(string: "https://api.instagram.com/oauth/authorize/?client_id=3d4fca2662944a0193f555c2f7f79258&redirect_uri=https://befriend-mizmattia.herokuapp.com&response_type=code")!)
@@ -30,28 +30,5 @@ class InstaWrapper{
         )
         
     }
-    func doOAuthInstagram(_ serviceParameters: [String:String]){
-        let oauthswift = OAuth2Swift(
-            consumerKey:    serviceParameters["consumerKey"]!,
-            consumerSecret: serviceParameters["consumerSecret"]!,
-            authorizeUrl:   "https://api.instagram.com/oauth/authorize",
-            responseType:   "token"
-            // or
-            // accessTokenUrl: "https://api.instagram.com/oauth/access_token",
-            // responseType:   "code"
-        )
-        
-        let state = generateState(withLength: 20)
-        self.oauthswift = oauthswift
-        oauthswift.authorizeURLHandler = getURLHandler()
-        let _ = oauthswift.authorize(
-            withCallbackURL: URL(string: "oauth-swift://oauth-callback/instagram")!, scope: "relationships", state:state,
-            success: { credential, response, parameters in
-                self.showTokenAlert(name: serviceParameters["name"], credential: credential)
-            },
-            failure: { error in
-                print(error.description)
-            }
-        )
 
 }

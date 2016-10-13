@@ -24,7 +24,8 @@
                                     <action selector="twitterLoginButtonWithSender:" destination="JAg-O3-th1" eventType="touchUpInside" id="V4f-2L-NT4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-2k-Zrn">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-2k-Zrn">
+                                <frame key="frameInset" minY="137" width="375" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="z8T-fs-gB6"/>
                                 </constraints>
@@ -33,13 +34,22 @@
                                     <action selector="facebookLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="q49-sV-Pch"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-ff-kxh">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-ff-kxh">
+                                <frame key="frameInset" minY="221" width="375" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="ItN-hm-WhN"/>
                                 </constraints>
                                 <state key="normal" title="Login to Linkedin"/>
                                 <connections>
                                     <action selector="linkedinLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="lOn-fh-mWb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-7E-3eW">
+                                <frame key="frameInset" minX="123" minY="358" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login to Instagram"/>
+                                <connections>
+                                    <action selector="LogintoInsta:" destination="JAg-O3-th1" eventType="touchUpInside" id="cqI-qa-kfc"/>
                                 </connections>
                             </button>
                         </subviews>
