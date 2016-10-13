@@ -12,6 +12,7 @@
 		8E1273951D9D9FD100312789 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1273911D9D9FD100312789 /* TwitterKit.framework */; };
 		8E1273961D9D9FD100312789 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E1273921D9D9FD100312789 /* TwitterKitResources.bundle */; };
 		8E1273971D9D9FD100312789 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1273931D9D9FD100312789 /* TwitterCore.framework */; };
+		8E2944C51DB009270006AD6F /* InstaWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2944C41DB009270006AD6F /* InstaWrapper.swift */; };
 		BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */; };
 		BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */; };
 		BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */; };
@@ -100,6 +101,7 @@
 		8E1273911D9D9FD100312789 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		8E1273921D9D9FD100312789 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		8E1273931D9D9FD100312789 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		8E2944C41DB009270006AD6F /* InstaWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaWrapper.swift; sourceTree = "<group>"; };
 		BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaSession.swift; sourceTree = "<group>"; };
 		BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedinWrapper.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				BFE17B211D99C5630096DBFB /* Bridging-Header.h */,
 				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
 				8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */,
+				8E2944C41DB009270006AD6F /* InstaWrapper.swift */,
 				BFC854631D81F6F2003E70CA /* Main.storyboard */,
 				BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */,
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
@@ -448,6 +451,7 @@
 				BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */,
 				BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */,
 				BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */,
+				8E2944C51DB009270006AD6F /* InstaWrapper.swift in Sources */,
 				BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */,
 				8E05CD4F1D9B07CA006837A5 /* TwitterWrapper.swift in Sources */,
 				BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */,
