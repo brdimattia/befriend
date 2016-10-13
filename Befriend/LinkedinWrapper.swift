@@ -1,5 +1,5 @@
 //
-//  TwitterWrapper.swift
+//  LinkedinWrapper.swift
 //  Befriend
 //
 //  Created by Danielle Misiaszek on 9/27/16.
