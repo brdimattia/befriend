@@ -14,7 +14,7 @@ import OAuthSwift
 class LinkedinWrapper{
     
     //Makes a follow request to screenName over the verified Authentication request
-    func followRequest(_ oauthswift: OAuth1Swift, screenName: String){
+    func connectRequest(_ oauthswift: OAuth1Swift, screenName: String){
         var params = Dictionary<String, String>()
         params["follow"] = "true"
         params["screen_name"] = screenName
