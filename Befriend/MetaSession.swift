@@ -22,6 +22,7 @@ class MetaSession{
     var oAuthSwiftTwitter : OAuth1Swift;
     var oAuthSwiftFacebook : OAuth2Swift;
     var oAuthSwiftLinkedin : OAuth1Swift;
+    var oAuthSwiftInsta : OAuth1Swift;
     
     init(){
         self.twtSession = nil;
@@ -45,6 +46,13 @@ class MetaSession{
             requestTokenUrl: "https://api.linkedin.com/uas/oauth/requestToken",
             authorizeUrl:    "https://api.linkedin.com/uas/oauth/authenticate",
             accessTokenUrl:  "https://api.linkedin.com/uas/oauth/accessToken"
+        )
+        oAuthSwiftInsta = OAuth1Swift(
+            consumerKey:    "",
+            consumerSecret: "",
+            requestTokenUrl: "",
+            authorizeUrl:    "",
+            accessTokenUrl:  "https://api.instagram.com/oauth/access_token"
         )
     }
     
