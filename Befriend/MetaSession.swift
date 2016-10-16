@@ -3,14 +3,15 @@
 //  Befriend
 //
 //  Created by Ben DiMattia on 9/30/16.
-//  Copyright © 2016 MisMattia. All rights reserved.
+//  Copyright © 2016 MizMattia. All rights reserved.
 //
 
 import Foundation
 import UIKit
+import OAuthSwift
 import Fabric
 import TwitterKit
-import OAuthSwift
+
 
 
 class MetaSession{
@@ -22,7 +23,7 @@ class MetaSession{
     var oAuthSwiftTwitter : OAuth1Swift;
     var oAuthSwiftFacebook : OAuth2Swift;
     var oAuthSwiftLinkedin : OAuth1Swift;
-    var oAuthSwiftInsta : OAuth1Swift;
+    var oAuthSwiftInsta : OAuth2Swift;
     
     init(){
         self.twtSession = nil;
@@ -47,7 +48,7 @@ class MetaSession{
             authorizeUrl:    "https://api.linkedin.com/uas/oauth/authenticate",
             accessTokenUrl:  "https://api.linkedin.com/uas/oauth/accessToken"
         )
-        oAuthSwiftInsta = OAuth1Swift(
+        oAuthSwiftInsta = OAuth2Swift(
             consumerKey:    "3d4fca2662944a0193f555c2f7f79258",
             consumerSecret: "44f87746f9b1460388b95eaaddbc494a",
             requestTokenUrl: "",
