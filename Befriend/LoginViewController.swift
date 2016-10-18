@@ -38,9 +38,32 @@ class LoginViewController: UIViewController{
                 print("Instagram error is: " , error)
             }
         )
-        appDelegate.METASESSION.oAuthSwiftInsta = oioswift;
+//        appDelegate.METASESSION.oAuthSwiftInsta = oioswift;
 
-
+    }
+    
+     @IBAction func spotifyLogin(_ sender: AnyObject){
+        let ososwift = OAuth2Swift(
+            consumerKey:    "f579ad7c67a74afb8e88a10c96978b96",
+            consumerSecret: "ff97a193f8ac40bb92e7afa0bd44eea0",
+            authorizeUrl:   "https://accounts.spotify.com/en/authorize",
+            accessTokenUrl: "https://accounts.spotify.com/api/token",
+            responseType:   "code"
+        )
+        ososwift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: ososwift)
+        let state = generateState(withLength: 20)
+        
+        let _ = ososwift.authorize(
+            withCallbackURL: URL(string: "befriend://oauth-callback/spotify")!,
+            scope: "user-library-modify", state: state,
+            success: { credential, response, parameters in
+                print("Authenticted with Service <Spotify>")
+                //self.showTokenAlert(name: serviceParameters["name"], credential: credential)
+            },
+            failure: { error in
+                print("Spotify error is: ",error)
+            }
+        )
     }
     
     @IBAction func twitterLoginButton(sender: AnyObject) {
@@ -68,8 +91,6 @@ class LoginViewController: UIViewController{
             }
         )
         appDelegate.METASESSION.oAuthSwiftTwitter = otoswift;
-        
-        
         
     
     }
