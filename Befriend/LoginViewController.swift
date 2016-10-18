@@ -15,31 +15,34 @@ import OAuthSwift
 class LoginViewController: UIViewController{
     
     let appDelegate = UIApplication.shared.delegate as!AppDelegate
+    
+    
     @IBAction func LogintoInsta(_ sender: AnyObject) {
-        let oauthswift = OAuth2Swift(
+        let oioswift = OAuth2Swift(
             consumerKey:    "3d4fca2662944a0193f555c2f7f79258",
             consumerSecret: "44f87746f9b1460388b95eaaddbc494a",
             authorizeUrl:   "https://api.instagram.com/oauth/authorize",
             responseType:   "token"
-            // or
-            // accessTokenUrl: "https://api.instagram.com/oauth/access_token",
-            // responseType:   "code"
         )
         
         let state = generateState(withLength: 20)
-        self.oauthswift = oauthswift
-        oauthswift.authorizeURLHandler = getURLHandler()
-        let _ = oauthswift.authorize(
-            withCallbackURL: URL(string: "oauth-swift://oauth-callback/instagram")!, scope: "relationships", state:state,
+        oioswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: oioswift)
+        let _ = oioswift.authorize(
+            withCallbackURL: URL(string: "https://befriend-mizmattia.herokuapp.com/instagram")!, scope: "relationships", state:state,
             success: { credential, response, parameters in
-                self.showTokenAlert(name: serviceParameters["name"], credential: credential)
+                print("Authenticted with Service <Instagram>")
+                //        let igWrapper : InstaWrapper = InstaWrapper()
+                //        igWrapper.followRequest(appDelegate.METASESSION.oAuthSwiftInsta, screenName: "zacefron");
             },
             failure: { error in
-                print(error.description)
+                print("Instagram error is: " , error)
             }
         )
+        appDelegate.METASESSION.oAuthSwiftInsta = oioswift;
+
 
     }
+    
     @IBAction func twitterLoginButton(sender: AnyObject) {
         //LOGIN TO TWITTER
         
@@ -57,6 +60,8 @@ class LoginViewController: UIViewController{
             withCallbackURL: URL(string: "befriend://oauth-callback/twitter")!,
             success: { credential, response, parameters in
                 print("Authenticted with Service <Twitter>")
+                //let twtrWrapper : TwitterWrapper = TwitterWrapper()
+                //twtrWrapper.followRequest(appDelegate.METASESSION.oAuthSwiftTwitter, screenName: "BefriendBen");
             },
             failure: { error in
                 print("Twitter error is: " , error.localizedDescription)
@@ -65,8 +70,7 @@ class LoginViewController: UIViewController{
         appDelegate.METASESSION.oAuthSwiftTwitter = otoswift;
         
         
-        //let twtrWrapper : TwitterWrapper = TwitterWrapper()
-        //twtrWrapper.followRequest(appDelegate.METASESSION.oAuthSwiftTwitter, screenName: "BefriendBen");
+        
     
     }
     
@@ -90,6 +94,8 @@ class LoginViewController: UIViewController{
             withCallbackURL: URL(string: "https://befriend-mizmattia.herokuapp.com/")!, scope: "public_profile", state: state,
             success: { credential, response, parameters in
                 print("Authenticted with Service <Facebook>")
+                //let fbWrapper : FacebookWrapper = FacebookWrapper()
+                //fbWrapper.friendRequest(appDelegate.METASESSION.oAuthSwiftFacebook);
                 
             }, failure: { error in
                 print("Facebook error is: " , error.localizedDescription, terminator: "")
@@ -98,8 +104,7 @@ class LoginViewController: UIViewController{
         appDelegate.METASESSION.oAuthSwiftFacebook = ofoswift;
         
         
-        //let fbWrapper : FacebookWrapper = FacebookWrapper()
-        //fbWrapper.friendRequest(appDelegate.METASESSION.oAuthSwiftFacebook);
+        
         
     }
     
@@ -122,6 +127,8 @@ class LoginViewController: UIViewController{
             withCallbackURL: URL(string: "befriend://oauth-callback/linkedin")!,
             success: { credential, response, parameters in
                 print("Authenticted with Service <Linkedin>")
+                //let liWrapper : LinkedinWrapper = LinkedinWrapper()
+                //liWrapper.connectRequest(appDelegate.METASESSION.oAuthSwiftLinkedin);
             },
             failure: { error in
                 print(error.localizedDescription)
@@ -130,14 +137,9 @@ class LoginViewController: UIViewController{
         appDelegate.METASESSION.oAuthSwiftLinkedin = oloswift;
         
         
-        //let liWrapper : LinkedinWrapper = LinkedinWrapper()
-        //liWrapper.connectRequest(appDelegate.METASESSION.oAuthSwiftLinkedin);
+        
+
     }
-    
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

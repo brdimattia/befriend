@@ -44,6 +44,13 @@
 			remoteGlobalIDString = BFC8545B1D81F6F1003E70CA;
 			remoteInfo = Befriend;
 		};
+		BFE5FB2D1DB41765009C5022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE83F171DB011BE00B42A61 /* OAuthSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F43502791A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
 		BFE83F211DB011BF00B42A61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFE83F171DB011BE00B42A61 /* OAuthSwift.xcodeproj */;
@@ -121,7 +128,6 @@
 		BFE17B1A1D99C0080096DBFB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		BFE17B1B1D99C0080096DBFB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		BFE17B1C1D99C0080096DBFB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		BFE17B211D99C5630096DBFB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		BFE17B221D99CE380096DBFB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Frameworks/Bolts.framework; sourceTree = "<group>"; };
 		BFE83F171DB011BE00B42A61 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = "OAuthSwift-master/OAuthSwift.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -185,7 +191,6 @@
 		BFC8545E1D81F6F2003E70CA /* Befriend */ = {
 			isa = PBXGroup;
 			children = (
-				BFE17B211D99C5630096DBFB /* Bridging-Header.h */,
 				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
 				8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */,
 				8E2944C41DB009270006AD6F /* InstaWrapper.swift */,
@@ -253,6 +258,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BFE5FB2E1DB41765009C5022 /* PBXTargetDependency */,
 			);
 			name = Befriend;
 			productName = Befriend;
@@ -487,6 +493,11 @@
 			target = BFC8545B1D81F6F1003E70CA /* Befriend */;
 			targetProxy = BFC8547C1D81F6F2003E70CA /* PBXContainerItemProxy */;
 		};
+		BFE5FB2E1DB41765009C5022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			targetProxy = BFE5FB2D1DB41765009C5022 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -613,7 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mizmattia.Befriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Befriend/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -633,8 +644,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mizmattia.Befriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Befriend/Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
