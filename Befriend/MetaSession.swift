@@ -23,7 +23,7 @@ class MetaSession{
     var oAuthSwiftTwitter : OAuth1Swift;
     var oAuthSwiftFacebook : OAuth2Swift;
     var oAuthSwiftLinkedin : OAuth1Swift;
-    var oAuthSwiftInsta : OAuth2Swift;
+//    var oAuthSwiftInsta : OAuth2Swift;
     
     init(){
         self.twtSession = nil;
@@ -48,6 +48,7 @@ class MetaSession{
             authorizeUrl:    "https://api.linkedin.com/uas/oauth/authenticate",
             accessTokenUrl:  "https://api.linkedin.com/uas/oauth/accessToken"
         )
+<<<<<<< HEAD
         oAuthSwiftInsta = OAuth2Swift(
 
             consumerKey:    "********",
@@ -59,7 +60,25 @@ class MetaSession{
             // responseType:   "code"
 
         )
+=======
+        
+//        oAuthSwiftInsta = OAuth2Swift(
+//            consumerKey:    "********",
+//            consumerSecret: "********",
+//            authorizeUrl:   "https://api.instagram.com/oauth/authorize",
+//            responseType:   "token",
+//            // or
+//            // accessTokenUrl: "https://api.instagram.com/oauth/access_token",
+//            // responseType:   "code"
+//            consumerKey:    "3d4fca2662944a0193f555c2f7f79258",
+//            consumerSecret: "44f87746f9b1460388b95eaaddbc494a",
+//            requestTokenUrl: "",
+//            authorizeUrl:    "",
+//            accessTokenUrl:  "https://api.instagram.com/oauth/access_token"
+//       )
+>>>>>>> 86780a0d264e3355911685310c4d2b888b188589
 
+        
     }
     
     

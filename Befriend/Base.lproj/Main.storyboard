@@ -42,10 +42,19 @@
                                     <action selector="linkedinLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="lOn-fh-mWb"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-7E-3eW">
                                 <state key="normal" title="Login to Instagram"/>
                                 <connections>
                                     <action selector="LogintoInsta:" destination="JAg-O3-th1" eventType="touchUpInside" id="cqI-qa-kfc"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG2-n9-D26">
+                                <frame key="frameInset" minX="133" minY="526" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login to Spotify"/>
+                                <connections>
+                                    <action selector="spotifyLogin:" destination="JAg-O3-th1" eventType="touchUpInside" id="9c5-P7-Ahz"/>
+>>>>>>> 86780a0d264e3355911685310c4d2b888b188589
                                 </connections>
                             </button>
                         </subviews>
@@ -64,6 +73,9 @@
                             <constraint firstItem="Zgh-ff-kxh" firstAttribute="top" secondItem="3Yz-2k-Zrn" secondAttribute="bottom" constant="-103" id="wZn-a7-cWo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SpotifyLogin" destination="XG2-n9-D26" id="kJd-v5-P4t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYu-Lk-Xse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
