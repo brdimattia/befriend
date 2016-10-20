@@ -17,6 +17,7 @@
 		BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */; };
 		BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */; };
 		BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */; };
+		BFB128061DB7D0AE0063AF16 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB128051DB7D0AE0063AF16 /* WebViewController.swift */; };
 		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
 		BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854631D81F6F2003E70CA /* Main.storyboard */; };
 		BFC854671D81F6F2003E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC854661D81F6F2003E70CA /* Assets.xcassets */; };
@@ -113,6 +114,7 @@
 		BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaSession.swift; sourceTree = "<group>"; };
 		BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedinWrapper.swift; sourceTree = "<group>"; };
 		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
+		BFB128051DB7D0AE0063AF16 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC854641D81F6F2003E70CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
 				BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */,
+				BFB128051DB7D0AE0063AF16 /* WebViewController.swift */,
 				BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */,
 				BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */,
 				BFC8546B1D81F6F2003E70CA /* Info.plist */,
@@ -461,6 +464,7 @@
 				BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */,
 				8E05CD4F1D9B07CA006837A5 /* TwitterWrapper.swift in Sources */,
 				BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */,
+				BFB128061DB7D0AE0063AF16 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

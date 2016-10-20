@@ -21,6 +21,7 @@ class WebViewController: OAuthWebViewController {
 
     var targetURL: URL?
     let webView: WebView = WebView()
+    @IBOutlet weak var WebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

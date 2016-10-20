@@ -19,8 +19,8 @@ class LoginViewController: UIViewController{
     
     @IBAction func LogintoInsta(_ sender: AnyObject) {
         let oioswift = OAuth2Swift(
-            consumerKey:    "3d4fca2662944a0193f555c2f7f79258",
-            consumerSecret: "44f87746f9b1460388b95eaaddbc494a",
+            consumerKey:    "96bcd464e3be4e9ea2159268ad4fa456",//"3d4fca2662944a0193f555c2f7f79258",
+            consumerSecret: "83b62975e47848f2b6c68bf53db8ab81", //"44f87746f9b1460388b95eaaddbc494a",
             authorizeUrl:   "https://api.instagram.com/oauth/authorize",
             responseType:   "token"
         )
@@ -28,7 +28,7 @@ class LoginViewController: UIViewController{
         let state = generateState(withLength: 20)
         oioswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: oioswift)
         let _ = oioswift.authorize(
-            withCallbackURL: URL(string: "https://befriend-mizmattia.herokuapp.com/instagram")!, scope: "relationships", state:state,
+            withCallbackURL: URL(string: "http://befriend-mizmattia.herokuapp.com/callback/instagram")!, scope: "relationships", state:state,
             success: { credential, response, parameters in
                 print("Authenticted with Service <Instagram>")
                 //        let igWrapper : InstaWrapper = InstaWrapper()

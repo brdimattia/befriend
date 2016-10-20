@@ -49,7 +49,7 @@ class MetaSession{
             accessTokenUrl:  "https://api.linkedin.com/uas/oauth/accessToken"
         )
         oAuthSwiftInsta = OAuth2Swift(
-<<<<<<< HEAD
+
             consumerKey:    "********",
             consumerSecret: "********",
             authorizeUrl:   "https://api.instagram.com/oauth/authorize",
@@ -57,13 +57,7 @@ class MetaSession{
             // or
             // accessTokenUrl: "https://api.instagram.com/oauth/access_token",
             // responseType:   "code"
-=======
-            consumerKey:    "3d4fca2662944a0193f555c2f7f79258",
-            consumerSecret: "44f87746f9b1460388b95eaaddbc494a",
-            requestTokenUrl: "",
-            authorizeUrl:    "",
-            accessTokenUrl:  "https://api.instagram.com/oauth/access_token"
->>>>>>> fab7c403b1297bea4d9b1e35d78ea7a468783fcf
+
         )
 
     }
