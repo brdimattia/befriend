@@ -203,11 +203,8 @@
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
 				BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */,
-<<<<<<< HEAD
 				BFB128051DB7D0AE0063AF16 /* WebViewController.swift */,
-=======
 				8EA6E18A1DB6B1220016C923 /* SpotifyWrapper.swift */,
->>>>>>> 86780a0d264e3355911685310c4d2b888b188589
 				BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */,
 				BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */,
 				BFC8546B1D81F6F2003E70CA /* Info.plist */,
