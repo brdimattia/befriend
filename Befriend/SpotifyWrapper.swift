@@ -16,11 +16,11 @@ class SpotifyWrapper{
     //    var params = Dictionary<String, String>()
 //        params["follow"] = "true"
   //      params["screen_name"] = screenName
-        let _ =  oauthswift.client.post("https://api.twitter.com/1.1/friendships/create.json", parameters: params,
-                                        success: { data, response in
-                                            let dataString = String(data: data, encoding: String.Encoding.utf8)
-                                            print("datastring", dataString)},
-                                        failure: { error in
-                                            print("the error is" , error)})
+     //   let _ =  oauthswift.client.post("https://api.twitter.com/1.1/friendships/create.json", parameters: params,
+                                       // success: { data, response in
+                                           // let dataString = String(data: data, encoding: String.Encoding.utf8)
+                                       //     print("datastring", dataString)},
+                                  //      failure: { error in
+                                  //          print("the error is" , error)})
     }
 }
