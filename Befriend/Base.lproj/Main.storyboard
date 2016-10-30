@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,28 +40,39 @@
                                     <action selector="linkedinLoginButton:" destination="JAg-O3-th1" eventType="touchUpInside" id="lOn-fh-mWb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-xg-pIQ">
-                                <frame key="frameInset" minX="74" minY="556" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-xg-pIQ">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="SPOTIFY"/>
                                 <connections>
                                     <action selector="spotifyLogin:" destination="JAg-O3-th1" eventType="touchUpInside" id="smy-Px-d6w"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51k-6l-SRw">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Pinterest"/>
+                                <connections>
+                                    <action selector="LogintoPinterest:" destination="JAg-O3-th1" eventType="touchUpInside" id="m79-Pp-RPY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="51k-6l-SRw" secondAttribute="bottom" constant="194" id="0hN-Su-Z7w"/>
                             <constraint firstItem="Zgh-ff-kxh" firstAttribute="leading" secondItem="3Yz-2k-Zrn" secondAttribute="leading" id="CJ4-58-heh"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="leading" secondItem="k5d-fW-qGN" secondAttribute="leading" id="DKm-IM-yj1"/>
+                            <constraint firstItem="51k-6l-SRw" firstAttribute="leading" secondItem="ei6-xg-pIQ" secondAttribute="leading" id="J1O-4U-xD9"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="trailing" secondItem="k5d-fW-qGN" secondAttribute="trailing" id="K2O-KI-tIW"/>
                             <constraint firstItem="Zgh-ff-kxh" firstAttribute="trailing" secondItem="3Yz-2k-Zrn" secondAttribute="trailing" id="KpG-Bl-VOR"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="top" secondItem="dz8-oD-oc5" secondAttribute="top" constant="232" id="R6l-PG-bd6"/>
+                            <constraint firstItem="51k-6l-SRw" firstAttribute="trailing" secondItem="ei6-xg-pIQ" secondAttribute="trailing" id="aqr-wF-WgI"/>
+                            <constraint firstItem="51k-6l-SRw" firstAttribute="leading" secondItem="dz8-oD-oc5" secondAttribute="leadingMargin" constant="58" id="cey-w0-shr"/>
                             <constraint firstAttribute="centerX" secondItem="3Yz-2k-Zrn" secondAttribute="centerX" id="el2-nR-Y0Y"/>
+                            <constraint firstItem="51k-6l-SRw" firstAttribute="centerX" secondItem="3Yz-2k-Zrn" secondAttribute="centerX" id="gwd-ou-7pq"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="top" secondItem="k5d-fW-qGN" secondAttribute="bottom" constant="83" id="lrx-5b-U6V"/>
                             <constraint firstItem="3Yz-2k-Zrn" firstAttribute="leading" secondItem="dz8-oD-oc5" secondAttribute="leading" id="nHk-Lt-Ryg"/>
                             <constraint firstAttribute="trailing" secondItem="3Yz-2k-Zrn" secondAttribute="trailing" id="ngL-Uf-Jqj"/>
                             <constraint firstItem="Zgh-ff-kxh" firstAttribute="top" secondItem="3Yz-2k-Zrn" secondAttribute="bottom" constant="-103" id="wZn-a7-cWo"/>
+                            <constraint firstItem="ei6-xg-pIQ" firstAttribute="top" secondItem="51k-6l-SRw" secondAttribute="bottom" constant="83" id="xY0-5t-eiG"/>
                         </constraints>
                     </view>
                 </viewController>

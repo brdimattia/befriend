@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/MetaSession.swift"
-            timestampString = "499548764.732995"
+            timestampString = "499553385.466977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/LoginViewController.swift"
-            timestampString = "498334713.415347"
+            timestampString = "499552476.998499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "LogintoInsta(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -112,6 +112,22 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "followRequest(_:screenName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Befriend/LoginViewController.swift"
+            timestampString = "499553360.303314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "LogintoPinterest(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

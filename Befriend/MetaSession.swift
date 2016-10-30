@@ -25,6 +25,7 @@ class MetaSession{
     var oAuthSwiftLinkedin : OAuth1Swift;
     var oAuthSwiftInsta : OAuth2Swift;
     var oAuthSwiftSpotify : OAuth2Swift;
+    var oAuthSwiftPinterest : OAuth2Swift;
     
     init(){
         self.twtSession = nil;
@@ -67,6 +68,15 @@ class MetaSession{
             accessTokenUrl: "https://accounts.spotify.com/api/token",
             responseType:   "code"
         )
+        oAuthSwiftPinterest = OAuth2Swift(
+            consumerKey:    "********",
+            consumerSecret: "********",
+            authorizeUrl:   "https://api.pinterest.com/oauth/",
+            accessTokenUrl: "https://api.pinterest.com/v1/oauth/token",
+            responseType:   "code",
+            contentType: "authorization_code"
+        )
+
 
         
     }

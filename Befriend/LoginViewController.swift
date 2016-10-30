@@ -17,6 +17,34 @@ class LoginViewController: UIViewController{
     let appDelegate = UIApplication.shared.delegate as!AppDelegate
     
     
+    @IBAction func LogintoPinterest(_ sender: AnyObject) {
+        let oposwift = OAuth2Swift(
+            consumerKey:    "4865149026609146368",
+            consumerSecret: "04aec88e9552d5c8342d19f15ed9b7da708ec086f54527a0dc5f9f6bb282935c",
+            authorizeUrl:   "https://api.pinterest.com/oauth/",
+            accessTokenUrl: "https://api.pinterest.com/v1/oauth/token",
+            responseType:   "code",
+            contentType: "authorization_code"
+        )
+        oposwift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: oposwift)
+        let state = generateState(withLength: 20)
+        
+        let _ = oposwift.authorize(
+            withCallbackURL: URL(string: "https://befriend-mizmattia.herokuapp.com/callback/pinterest")!,
+            scope: "write_relationships", state: state,
+            success: { credential, response, parameters in
+                print("Authenticted with Service <Pinterest>")
+                self.appDelegate.METASESSION.oAuthSwiftPinterest = oposwift;
+                let piWrapper : PinterestWrapper = PinterestWrapper()
+                piWrapper.followRequest(self.appDelegate.METASESSION.oAuthSwiftPinterest, screenName: "foodnetwork")
+                
+            },
+            failure: { error in
+                print("Pinterest error is: ",error)
+            }
+        )
+        
+    }
     @IBAction func LogintoInsta(_ sender: AnyObject) {
         let oioswift = OAuth2Swift(
             consumerKey:    "96bcd464e3be4e9ea2159268ad4fa456",//"3d4fca2662944a0193f555c2f7f79258",

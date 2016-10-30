@@ -17,6 +17,7 @@
 		BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */; };
 		BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */; };
 		BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */; };
+		BF944BE01DC692F000A74D40 /* PinterestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */; };
 		BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */; };
 		BFB128061DB7D0AE0063AF16 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB128051DB7D0AE0063AF16 /* WebViewController.swift */; };
 		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
@@ -115,6 +116,7 @@
 		BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaSession.swift; sourceTree = "<group>"; };
 		BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedinWrapper.swift; sourceTree = "<group>"; };
+		BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestWrapper.swift; sourceTree = "<group>"; };
 		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
 		BFB128051DB7D0AE0063AF16 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
 				BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */,
 				BFB128051DB7D0AE0063AF16 /* WebViewController.swift */,
+				BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */,
 				8EA6E18A1DB6B1220016C923 /* SpotifyWrapper.swift */,
 				BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */,
 				BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */,
@@ -468,6 +471,7 @@
 				8E05CD4F1D9B07CA006837A5 /* TwitterWrapper.swift in Sources */,
 				8EA6E18B1DB6B1220016C923 /* SpotifyWrapper.swift in Sources */,
 				BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */,
+				BF944BE01DC692F000A74D40 /* PinterestWrapper.swift in Sources */,
 				BFB128061DB7D0AE0063AF16 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
