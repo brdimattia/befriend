@@ -24,6 +24,7 @@ class MetaSession{
     var oAuthSwiftFacebook : OAuth2Swift;
     var oAuthSwiftLinkedin : OAuth1Swift;
     var oAuthSwiftInsta : OAuth2Swift;
+    var oAuthSwiftSpotify : OAuth2Swift;
     
     init(){
         self.twtSession = nil;
@@ -58,6 +59,13 @@ class MetaSession{
             // accessTokenUrl: "https://api.instagram.com/oauth/access_token",
             // responseType:   "code"
 
+        )
+        oAuthSwiftSpotify = OAuth2Swift(
+            consumerKey:    "********",
+            consumerSecret: "********",
+            authorizeUrl:   "https://accounts.spotify.com/en/authorize",
+            accessTokenUrl: "https://accounts.spotify.com/api/token",
+            responseType:   "code"
         )
 
         

@@ -55,10 +55,13 @@ class LoginViewController: UIViewController{
         
         let _ = ososwift.authorize(
             withCallbackURL: URL(string: "befriend://oauth-callback/spotify")!,
-            scope: "user-library-modify", state: state,
+            scope: "user-follow-modify", state: state,
             success: { credential, response, parameters in
                 print("Authenticted with Service <Spotify>")
-                //self.showTokenAlert(name: serviceParameters["name"], credential: credential)
+                self.appDelegate.METASESSION.oAuthSwiftSpotify = ososwift;
+                let spWrapper : SpotifyWrapper = SpotifyWrapper()
+                spWrapper.followRequest(self.appDelegate.METASESSION.oAuthSwiftSpotify, screenName: "danimiz")
+                
             },
             failure: { error in
                 print("Spotify error is: ",error)

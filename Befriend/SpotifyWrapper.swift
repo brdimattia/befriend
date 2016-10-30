@@ -12,15 +12,14 @@ import OAuthSwift
 
 class SpotifyWrapper{
     
-    func followRequest(_ oauthswift: OAuth1Swift, screenName: String){
-    //    var params = Dictionary<String, String>()
-//        params["follow"] = "true"
-  //      params["screen_name"] = screenName
-     //   let _ =  oauthswift.client.post("https://api.twitter.com/1.1/friendships/create.json", parameters: params,
-                                       // success: { data, response in
-                                           // let dataString = String(data: data, encoding: String.Encoding.utf8)
-                                       //     print("datastring", dataString)},
-                                  //      failure: { error in
-                                  //          print("the error is" , error)})
+    func followRequest(_ oauthswift: OAuth2Swift, screenName: String){
+        let url = "https://api.spotify.com/v1/me/following?type=user&ids=" + screenName
+        
+        let _ =  oauthswift.client.put(url,
+                                        success: { data, response in
+                                            let dataString = String(data: data, encoding: String.Encoding.utf8)
+                                            print("datastring", dataString)},
+                                        failure: { error in
+                                            print("the error is" , error)})
     }
 }
