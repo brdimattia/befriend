@@ -18,7 +18,7 @@ class PinterestWrapper{
         let _ =  oauthswift.client.post(url,
                                        success: { data, response in
                                         let dataString = String(data: data, encoding: String.Encoding.utf8)
-                                        print("datastring", dataString)},
+                                        print("datastring", dataString ?? "Null")},
                                        failure: { error in
                                         print("the error is" , error)})
     }

@@ -16,7 +16,7 @@ class FacebookWrapper{
             "https://graph.facebook.com/me?",
             success: { data, response in
                 let dataString = String(data: data, encoding: String.Encoding.utf8)
-                print(dataString)
+                print(dataString ?? "Null")
             }, failure: { error in
                 print(error)
             }
