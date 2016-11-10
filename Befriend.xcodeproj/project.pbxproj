@@ -16,10 +16,14 @@
 		8EA6E18B1DB6B1220016C923 /* SpotifyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6E18A1DB6B1220016C923 /* SpotifyWrapper.swift */; };
 		BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */; };
 		BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */; };
+		BF2BC8991DD503F3005E4DE0 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BC8981DD503F3005E4DE0 /* FriendsViewController.swift */; };
+		BF2BC89B1DD5087B005E4DE0 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BC89A1DD5087B005E4DE0 /* FriendCell.swift */; };
+		BF2BC89D1DD50B52005E4DE0 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BC89C1DD50B52005E4DE0 /* Friends.swift */; };
 		BF3B2A061DD0F0BA00C73FAE /* BefriendLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3B2A051DD0F0BA00C73FAE /* BefriendLoginViewController.swift */; };
 		BF7E39131DD018EE00E42B1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E39121DD018EE00E42B1F /* MainViewController.swift */; };
 		BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */; };
 		BF944BE01DC692F000A74D40 /* PinterestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */; };
+		BFA851631DD267BB0079BD50 /* BefriendSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA851621DD267BB0079BD50 /* BefriendSignupViewController.swift */; };
 		BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */; };
 		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
 		BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854631D81F6F2003E70CA /* Main.storyboard */; };
@@ -116,10 +120,14 @@
 		8EA6E18A1DB6B1220016C923 /* SpotifyWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyWrapper.swift; sourceTree = "<group>"; };
 		BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF220B7E1D9ECB2800CCFE4D /* MetaSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaSession.swift; sourceTree = "<group>"; };
+		BF2BC8981DD503F3005E4DE0 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		BF2BC89A1DD5087B005E4DE0 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		BF2BC89C1DD50B52005E4DE0 /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		BF3B2A051DD0F0BA00C73FAE /* BefriendLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BefriendLoginViewController.swift; sourceTree = "<group>"; };
 		BF7E39121DD018EE00E42B1F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BF827C421DA3131A00E00FFF /* LinkedinWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedinWrapper.swift; sourceTree = "<group>"; };
 		BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestWrapper.swift; sourceTree = "<group>"; };
+		BFA851621DD267BB0079BD50 /* BefriendSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BefriendSignupViewController.swift; sourceTree = "<group>"; };
 		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -199,15 +207,19 @@
 		BFC8545E1D81F6F2003E70CA /* Befriend */ = {
 			isa = PBXGroup;
 			children = (
+				BF2BC8981DD503F3005E4DE0 /* FriendsViewController.swift */,
+				BF2BC89A1DD5087B005E4DE0 /* FriendCell.swift */,
+				BF2BC89C1DD50B52005E4DE0 /* Friends.swift */,
 				BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */,
 				BF7E39121DD018EE00E42B1F /* MainViewController.swift */,
 				BF3B2A051DD0F0BA00C73FAE /* BefriendLoginViewController.swift */,
+				BFA851621DD267BB0079BD50 /* BefriendSignupViewController.swift */,
 				BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */,
-				BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */,
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
 				BFC854631D81F6F2003E70CA /* Main.storyboard */,
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
 				8E2944C41DB009270006AD6F /* InstaWrapper.swift */,
+				BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */,
 				8E05CD4E1D9B07CA006837A5 /* TwitterWrapper.swift */,
 				BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */,
 				8EA6E18A1DB6B1220016C923 /* SpotifyWrapper.swift */,
@@ -468,14 +480,18 @@
 			files = (
 				BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */,
 				BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */,
+				BF2BC8991DD503F3005E4DE0 /* FriendsViewController.swift in Sources */,
 				BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */,
 				8E2944C51DB009270006AD6F /* InstaWrapper.swift in Sources */,
 				BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */,
 				8E05CD4F1D9B07CA006837A5 /* TwitterWrapper.swift in Sources */,
+				BF2BC89B1DD5087B005E4DE0 /* FriendCell.swift in Sources */,
 				8EA6E18B1DB6B1220016C923 /* SpotifyWrapper.swift in Sources */,
 				BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */,
 				BF944BE01DC692F000A74D40 /* PinterestWrapper.swift in Sources */,
+				BFA851631DD267BB0079BD50 /* BefriendSignupViewController.swift in Sources */,
 				BF7E39131DD018EE00E42B1F /* MainViewController.swift in Sources */,
+				BF2BC89D1DD50B52005E4DE0 /* Friends.swift in Sources */,
 				BF3B2A061DD0F0BA00C73FAE /* BefriendLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
