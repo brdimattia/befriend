@@ -10,23 +10,24 @@ import Foundation
 import UIKit
 
 class Friends: NSObject {
-    let friends: [String]
+    let friends: [Friend]
     
-    init(friends: [String]) {
+    init(friends: [Friend]) {
         self.friends = friends
     }
 }
 
-extension Friends: UITableViewDataSource {
+extension Friends: UITableViewDataSource, UITableViewDelegate {
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return friends.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell") as! FriendCell
+            let friend = friends[indexPath.row]
+            cell.friendUsername = friend.username;
+            return cell
+        }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FriendCell.self)) as! FriendCell
-        let friend = friends[indexPath.row]
-        cell.friendUsername = friend
-        return cell
-    }
 }

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "white-hexagon-black-green-glow-gradient-540x960-c4-000000-ffffff-228b22-000000-l2-29-357-a-35-f-6.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "white-hexagon-black-green-glow-gradient-540x960-c4-000000-ffffff-228b22-000000-l2-29-357-a-35-f-7.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "white-hexagon-black-green-glow-gradient-540x960-c4-000000-ffffff-228b22-000000-l2-29-357-a-35-f-8.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

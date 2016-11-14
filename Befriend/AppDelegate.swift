@@ -17,9 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var METASESSION : MetaSession;
+    var friendToPass : Friend;
     
     override init(){
         self.METASESSION = MetaSession();
+        self.friendToPass = Friend(username: "", phoneNumber: "", addressStreet: "", addressCity: "", addressState: "", addressZip: "");
     }
     
 //    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

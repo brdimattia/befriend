@@ -12,11 +12,6 @@ import UIKit
 class FriendCell: UITableViewCell {
     
     @IBOutlet weak var username: UILabel!
-
-    @IBAction func gotoFriend(_ sender: Any) {
-        
-        print(username.text ?? "username");
-    }
     
     var friendUsername: String? {
         didSet {
