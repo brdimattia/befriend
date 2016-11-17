@@ -1,0 +1,54 @@
+//
+//  AddFriendViewController.swift
+//  Befriend
+//
+//  Created by Ben DiMattia on 11/17/16.
+//  Copyright © 2016 MisMattia. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class AddFriendViewController: UIViewController{
+    
+    
+    @IBOutlet weak var usernameField: UITextField!
+    @IBAction func addByUsernameButton(_ sender: Any) {
+   
+    
+    }
+    
+    @IBOutlet weak var phoneField: UITextField!
+    @IBAction func addByPhoneButton(_ sender: Any) {
+    
+    
+    }
+    
+    
+    @IBAction func addFromContactsButton(_ sender: Any) {
+        performSegue(withIdentifier: "addfriends_to_addbycontacts", sender: self)
+    }
+    
+    
+    @IBAction func toSettingButton(_ sender: Any) {
+        performSegue(withIdentifier: "addfriends_to_settings", sender: self)
+    
+    }
+    
+    
+    @IBAction func toFriendsButton(_ sender: Any) {
+        performSegue(withIdentifier: "addfriends_to_friends", sender: self)
+    
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //let appDelegate = UIApplication.shared.delegate as!AppDelegate
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+}

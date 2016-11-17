@@ -1,23 +1,15 @@
 //
-//  SettingsViewController.swift
+//  ContactsViewController.swift
 //  Befriend
 //
-//  Created by Ben DiMattia on 11/15/16.
+//  Created by Ben DiMattia on 11/17/16.
 //  Copyright © 2016 MisMattia. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class SettingsViewController: UIViewController{
-
-    @IBAction func gotoFriendsBuutton(_ sender: Any) {
-        performSegue(withIdentifier: "settings_to_friends", sender: self)
-    }
-    
-    @IBAction func logoutButton(_ sender: Any) {
-        performSegue(withIdentifier: "settings_to_login", sender: self)
-    }
+class ContactsViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
