@@ -11,6 +11,10 @@ import UIKit
 
 class AddFriendViewController: UIViewController{
     
+    @IBOutlet weak var unview: UIView!
+    @IBOutlet weak var phview: UIView!
+    @IBOutlet weak var cnview: UIView!
+    
     
     @IBOutlet weak var usernameField: UITextField!
     @IBAction func addByUsernameButton(_ sender: Any) {
@@ -44,6 +48,10 @@ class AddFriendViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         //let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        
+        unview.layer.borderColor = UIColor.black.cgColor
+        cnview.layer.borderColor = UIColor.black.cgColor
+        phview.layer.borderColor = UIColor.black.cgColor
     }
     
     override func didReceiveMemoryWarning() {

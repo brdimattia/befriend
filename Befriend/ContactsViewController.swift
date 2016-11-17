@@ -11,6 +11,10 @@ import UIKit
 
 class ContactsViewController: UIViewController{
     
+    @IBAction func backButton(_ sender: Any) {
+        performSegue(withIdentifier: "addbycontacts_to_addfriends", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //let appDelegate = UIApplication.shared.delegate as!AppDelegate
