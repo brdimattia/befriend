@@ -31,6 +31,7 @@
 		BFA1745F1DD637C000E5FBB5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1745E1DD637C000E5FBB5 /* ProfileViewController.swift */; };
 		BFA851631DD267BB0079BD50 /* BefriendSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA851621DD267BB0079BD50 /* BefriendSignupViewController.swift */; };
 		BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */; };
+		BFB3FD1B1DDE7EDC008F130C /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3FD1A1DDE7EDB008F130C /* ModalViewController.swift */; };
 		BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */; };
 		BFC854651D81F6F2003E70CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC854631D81F6F2003E70CA /* Main.storyboard */; };
 		BFC854671D81F6F2003E70CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC854661D81F6F2003E70CA /* Assets.xcassets */; };
@@ -141,6 +142,7 @@
 		BFA1745E1DD637C000E5FBB5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BFA851621DD267BB0079BD50 /* BefriendSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BefriendSignupViewController.swift; sourceTree = "<group>"; };
 		BFAC8DB51D9857FE007BB807 /* FacebookWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWrapper.swift; sourceTree = "<group>"; };
+		BFB3FD1A1DDE7EDB008F130C /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		BFC8545C1D81F6F1003E70CA /* Befriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Befriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC8545F1D81F6F2003E70CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC854641D81F6F2003E70CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				BF8434CE1DDE3A17000027DC /* ContactsViewController.swift */,
 				BFA1745E1DD637C000E5FBB5 /* ProfileViewController.swift */,
 				BF8434CC1DDE327A000027DC /* AddFriendViewController.swift */,
+				BFB3FD1A1DDE7EDB008F130C /* ModalViewController.swift */,
 				BF2BC8981DD503F3005E4DE0 /* FriendsViewController.swift */,
 				BF2BC89A1DD5087B005E4DE0 /* FriendCell.swift */,
 				BF2BC89C1DD50B52005E4DE0 /* Friends.swift */,
@@ -510,6 +513,7 @@
 				BF2BC89B1DD5087B005E4DE0 /* FriendCell.swift in Sources */,
 				8EA6E18B1DB6B1220016C923 /* SpotifyWrapper.swift in Sources */,
 				BF827C431DA3131A00E00FFF /* LinkedinWrapper.swift in Sources */,
+				BFB3FD1B1DDE7EDC008F130C /* ModalViewController.swift in Sources */,
 				BF944BE01DC692F000A74D40 /* PinterestWrapper.swift in Sources */,
 				BFA851631DD267BB0079BD50 /* BefriendSignupViewController.swift in Sources */,
 				BF7E39131DD018EE00E42B1F /* MainViewController.swift in Sources */,

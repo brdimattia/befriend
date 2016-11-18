@@ -18,13 +18,22 @@ class AddFriendViewController: UIViewController{
     
     @IBOutlet weak var usernameField: UITextField!
     @IBAction func addByUsernameButton(_ sender: Any) {
-   
-    
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! ModalViewController
+        self.addChildViewController(popOverVC)
+        
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
     }
     
     @IBOutlet weak var phoneField: UITextField!
     @IBAction func addByPhoneButton(_ sender: Any) {
-    
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! ModalViewController
+        self.addChildViewController(popOverVC)
+        
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
     
     }
     
