@@ -490,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/ModalViewController.swift"
-            timestampString = "501143803.46693"
+            timestampString = "501145346.614154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "showDetail()"
             landmarkType = "7">
             <Locations>
@@ -553,11 +553,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/ModalViewController.swift"
-            timestampString = "501143803.46693"
+            timestampString = "501145346.614154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "showDetail()"
             landmarkType = "7">
          </BreakpointContent>

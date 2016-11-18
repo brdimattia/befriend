@@ -36,13 +36,15 @@ class ModalViewController: UIViewController {
     }
 
     
+    @IBOutlet weak var detailButtonText: UIButton!
     @IBAction func detailButton(_ sender: Any) {
         if(drawerView.isHidden){
             showDetail()
+            detailButtonText.setTitle("Hide Details", for: .normal)
         }
         else{
             hideDetail()
-            
+            detailButtonText.setTitle("Show Details", for: .normal)
         }
     }
     
