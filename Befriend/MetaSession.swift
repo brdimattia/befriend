@@ -16,10 +16,9 @@ import TwitterKit
 
 class MetaSession{
     
-    
-    
+    var password: String;
+    var username: String;
     var twtSession : TWTRSession?;
-    
     var oAuthSwiftTwitter : OAuth1Swift;
     var oAuthSwiftFacebook : OAuth2Swift;
     var oAuthSwiftLinkedin : OAuth1Swift;
@@ -77,7 +76,8 @@ class MetaSession{
             contentType: "authorization_code"
         )
 
-
+        username = ""
+        password = ""
         
     }
     
