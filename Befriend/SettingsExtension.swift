@@ -88,43 +88,6 @@ class SettingsExtension: UITableViewController{
 func getUserInfo(){
     let appDelegate = UIApplication.shared.delegate as!AppDelegate
     
-    var request = URLRequest(url: URL(string: "http://cs.stonehill.edu/befriend/iphone_connect/getUserInfo.php")!)
-    request.httpMethod = "POST"
-    let postString = "username=" + appDelegate.METASESSION.username;
-    request.httpBody = postString.data(using: .utf8)
-    let task = URLSession.shared.dataTask(with: request) { data, response, error in
-        guard let data = data, error == nil else {
-            print("error=\(error)")
-            return
-        }
-        
-        if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
-            print("statusCode should be 200, but is \(httpStatus.statusCode)")
-        }
-        
-        let responseString = String(data: data, encoding: .utf8)!
-        print("responseString = \(responseString)")
-        
-        let result = self.convertStringToDictionary(text: responseString)
-        
-        self.userStruct = UserData(username: String(describing: result!["username"]!),
-                                  displayName: String(describing: result!["displayName"]!),
-                                  birthday: String(describing: result!["birthday"]!),
-                                  phoneNum: String(describing: result!["phoneNum"]!),
-                                  email: String(describing: result!["email"]!),
-                                  twitterID: String(describing: result!["twitterID"]!),
-                                  pinterestID: String(describing: result!["pinterestID"]!),
-                                  spotifyID: String(describing: result!["spotifyID"]!));
-        
-        self.usernameLabel.text = self.userStruct.username;
-        self.displayNameLabel.text = self.userStruct.displayName;
-        self.birthdayLabel.text = self.userStruct.birthday;
-        self.phoneLabel.text = self.userStruct.phoneNum;
-        self.emailLabel.text = self.userStruct.email;
-        
-    }
-    
-    task.resume()
     
 }
 
