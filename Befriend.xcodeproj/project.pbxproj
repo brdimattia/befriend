@@ -27,6 +27,8 @@
 		BF8434CF1DDE3A17000027DC /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8434CE1DDE3A17000027DC /* ContactsViewController.swift */; };
 		BF8434D11DDE48DE000027DC /* FinishSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8434D01DDE48DE000027DC /* FinishSignupViewController.swift */; };
 		BF944BE01DC692F000A74D40 /* PinterestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */; };
+		BF9DA82F1DE3950300A551CE /* SettingsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DA82E1DE3950300A551CE /* SettingsExtension.swift */; };
+		BF9DA8391DE3E12600A551CE /* UpdateModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9DA8381DE3E12600A551CE /* UpdateModalViewController.swift */; };
 		BFA174531DD62D1500E5FBB5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA174521DD62D1500E5FBB5 /* Friend.swift */; };
 		BFA1745F1DD637C000E5FBB5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1745E1DD637C000E5FBB5 /* ProfileViewController.swift */; };
 		BFA851631DD267BB0079BD50 /* BefriendSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA851621DD267BB0079BD50 /* BefriendSignupViewController.swift */; };
@@ -138,6 +140,8 @@
 		BF8434CE1DDE3A17000027DC /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		BF8434D01DDE48DE000027DC /* FinishSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishSignupViewController.swift; sourceTree = "<group>"; };
 		BF944BDF1DC692F000A74D40 /* PinterestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestWrapper.swift; sourceTree = "<group>"; };
+		BF9DA82E1DE3950300A551CE /* SettingsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsExtension.swift; sourceTree = "<group>"; };
+		BF9DA8381DE3E12600A551CE /* UpdateModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateModalViewController.swift; sourceTree = "<group>"; };
 		BFA174521DD62D1500E5FBB5 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		BFA1745E1DD637C000E5FBB5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BFA851621DD267BB0079BD50 /* BefriendSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BefriendSignupViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				BF8434D01DDE48DE000027DC /* FinishSignupViewController.swift */,
 				BF0D7DB41D9AF122005CECEF /* LoginViewController.swift */,
 				BF1E8A7C1DDB97E8004E65FD /* SettingsViewController.swift */,
+				BF9DA82E1DE3950300A551CE /* SettingsExtension.swift */,
+				BF9DA8381DE3E12600A551CE /* UpdateModalViewController.swift */,
 				BFC854661D81F6F2003E70CA /* Assets.xcassets */,
 				BFC854631D81F6F2003E70CA /* Main.storyboard */,
 				BFC854681D81F6F2003E70CA /* LaunchScreen.storyboard */,
@@ -500,9 +506,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF220B7F1D9ECB2800CCFE4D /* MetaSession.swift in Sources */,
+				BF9DA8391DE3E12600A551CE /* UpdateModalViewController.swift in Sources */,
 				BF0D7DB51D9AF122005CECEF /* LoginViewController.swift in Sources */,
 				BF2BC8991DD503F3005E4DE0 /* FriendsViewController.swift in Sources */,
 				BFC854601D81F6F2003E70CA /* AppDelegate.swift in Sources */,
+				BF9DA82F1DE3950300A551CE /* SettingsExtension.swift in Sources */,
 				8E2944C51DB009270006AD6F /* InstaWrapper.swift in Sources */,
 				BFAC8DB61D9857FE007BB807 /* FacebookWrapper.swift in Sources */,
 				8E05CD4F1D9B07CA006837A5 /* TwitterWrapper.swift in Sources */,

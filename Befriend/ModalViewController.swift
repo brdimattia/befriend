@@ -27,7 +27,6 @@ class ModalViewController: UIViewController {
         drawerView.isHidden = true
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         self.showAnimate()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

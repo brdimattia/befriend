@@ -11,6 +11,8 @@
     
     class BefriendLoginViewController: UIViewController{
         
+        let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        
         @IBOutlet weak var usernameField: UITextField!
         
         @IBOutlet weak var passwordField: UITextField!
@@ -38,6 +40,7 @@
                         //print("responseString = \(responseString)")
                         if(responseString == Optional("{\"success\":true}")){
                             OperationQueue.main.addOperation {
+                                self.appDelegate.METASESSION.username = self.usernameField.text!
                                 self.performSegue(withIdentifier:  "login_to_friends", sender: self)
                             }
                         }
