@@ -11,56 +11,28 @@ import UIKit
 
 
 class SettingsExtension: UITableViewController{
-
-    @IBOutlet weak var usernameLabel: UILabel!
- 
-    @IBOutlet weak var displayNameLabel: UILabel!
-    
-    @IBOutlet weak var birthdayLabel: UILabel!
-    
-    @IBOutlet weak var dateLabel: UILabel!
-    
-    @IBOutlet weak var phoneLabel: UILabel!
-    
-    @IBOutlet weak var emailLabel: UILabel!
     
     var viewParent : SettingsViewController
-    var userStruct : UserData;
-    
-    struct UserData {
-        var username : String;
-        var displayName : String;
-        var birthday : String;
-        var phoneNum : String;
-        var email : String;
-        var twitterID : String;
-        var pinterestID : String;
-        var spotifyID : String;
-    }
-    
+   
+
     override init(style: UITableViewStyle){
         viewParent = SettingsViewController();
-        userStruct = UserData(username: "", displayName: "", birthday: "", phoneNum: "", email: "", twitterID: "", pinterestID: "", spotifyID: "");
         super.init(style: style)
-        self.getUserInfo()
     }
     
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!){
         viewParent = SettingsViewController();
-        userStruct = UserData(username: "", displayName: "", birthday: "", phoneNum: "", email: "", twitterID: "", pinterestID: "", spotifyID: "");
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.getUserInfo()
     }
     
     required init(coder aDecoder: NSCoder) {
         viewParent = SettingsViewController();
-        userStruct = UserData(username: "", displayName: "", birthday: "", phoneNum: "", email: "", twitterID: "", pinterestID: "", spotifyID: "");
         super.init(coder: aDecoder)!
-        self.getUserInfo()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.getUserInfo()
     }
     
     @IBOutlet weak var nameCell: UITableViewCell!
@@ -88,17 +60,12 @@ class SettingsExtension: UITableViewController{
 func getUserInfo(){
     let appDelegate = UIApplication.shared.delegate as!AppDelegate
     
-    
+//    self.usernameLabel.text = appDelegate.METASESSION.userStruct.username;
+//    self.displayNameLabel.text = appDelegate.METASESSION.userStruct.displayName;
+//    self.birthdayLabel.text = appDelegate.METASESSION.userStruct.birthday;
+//    self.phoneLabel.text = appDelegate.METASESSION.userStruct.phoneNum;
+//    self.emailLabel.text = appDelegate.METASESSION.userStruct.email;
+
 }
 
-    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
-        if let data = text.data(using: String.Encoding.utf8) {
-            do {
-                return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-            } catch let error as NSError {
-                print(error)
-            }
-        }
-        return nil
-    }
 }

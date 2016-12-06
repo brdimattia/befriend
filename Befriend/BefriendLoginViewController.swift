@@ -47,6 +47,7 @@
                         //print("responseString = \(responseString)")
                         if(responseString == Optional("{\"success\":true}")){
                             OperationQueue.main.addOperation {
+                                
                                 self.appDelegate.METASESSION.username = self.usernameField.text!
                                 self.performSegue(withIdentifier:  "login_to_friends", sender: self)
                             }
@@ -104,5 +105,7 @@
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
         }
+        
+        
         
     }

@@ -25,6 +25,18 @@ class MetaSession{
     var oAuthSwiftInsta : OAuth2Swift;
     var oAuthSwiftSpotify : OAuth2Swift;
     var oAuthSwiftPinterest : OAuth2Swift;
+    var userStruct : UserData;
+    
+    struct UserData {
+        var username : String;
+        var displayName : String;
+        var birthday : String;
+        var phoneNum : String;
+        var email : String;
+        var twitterID : String;
+        var pinterestID : String;
+        var spotifyID : String;
+    }
     
     init(){
         self.twtSession = nil;
@@ -78,6 +90,8 @@ class MetaSession{
 
         username = ""
         password = ""
+        
+        userStruct = UserData(username: "", displayName: "", birthday: "", phoneNum: "", email: "", twitterID: "", pinterestID: "", spotifyID: "");
         
     }
     

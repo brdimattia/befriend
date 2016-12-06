@@ -521,10 +521,6 @@
                             <outlet property="delegate" destination="QaX-7K-wmg" id="nkE-si-v1t"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="nameCell" destination="pqV-7A-1Hs" id="c3E-UL-E0X"/>
-                        <outlet property="usernameLabel" destination="1eK-Ob-wTI" id="QJn-e9-mFo"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHz-y5-0Mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

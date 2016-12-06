@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/MetaSession.swift"
-            timestampString = "501389778.780294"
+            timestampString = "502315258.811487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
@@ -506,7 +506,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/ModalViewController.swift"
-                  timestampString = "501870192.752343"
+                  timestampString = "502746273.708602"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -521,7 +521,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/ModalViewController.swift"
-                  timestampString = "501870192.753944"
+                  timestampString = "502746273.71062"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -536,7 +536,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/ModalViewController.swift"
-                  timestampString = "501870192.755531"
+                  timestampString = "502746273.712254"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -585,11 +585,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/BefriendSignupViewController.swift"
-            timestampString = "501389778.780294"
+            timestampString = "502315974.976797"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "signupButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -654,22 +654,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
-            landmarkName = "SettingsExtension"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "501870190.719811"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
             landmarkName = "SettingsExtension"
             landmarkType = "3">
          </BreakpointContent>
@@ -761,11 +745,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "501735713.235945"
+            timestampString = "502746589.173385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "SettingsExtension"
             landmarkType = "3">
             <Locations>
@@ -966,7 +950,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsViewController.swift"
-                  timestampString = "501870192.774964"
+                  timestampString = "502746273.734718"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -981,7 +965,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsViewController.swift"
-                  timestampString = "501870192.776792"
+                  timestampString = "502746273.736409"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -996,7 +980,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsViewController.swift"
-                  timestampString = "501870192.778487"
+                  timestampString = "502746273.738042"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -1011,7 +995,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsViewController.swift"
-                  timestampString = "501870192.780137"
+                  timestampString = "502746273.73967"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -1026,7 +1010,7 @@
                   moduleName = "Befriend"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsViewController.swift"
-                  timestampString = "501870192.781725"
+                  timestampString = "502746273.741359"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -1043,43 +1027,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "501732643.165244"
+            timestampString = "502746589.173385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "SettingsExtension"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "501870190.719811"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "getUserInfo()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "501732643.165244"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1091,27 +1043,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "501870190.719811"
+            timestampString = "502746589.173385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "getUserInfo()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "501869919.376644"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
