@@ -1566,9 +1566,9 @@
         <image name="twitter" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vzU-l7-LgK"/>
         <segue reference="Z5s-Zf-Pme"/>
-        <segue reference="IwE-yu-Olz"/>
+        <segue reference="7x2-57-Pxx"/>
         <segue reference="w04-WL-x08"/>
+        <segue reference="IwE-yu-Olz"/>
     </inferredMetricsTieBreakers>
 </document>

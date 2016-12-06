@@ -48,6 +48,17 @@ class BefriendSignupViewController: UIViewController{
                             self.performSegue(withIdentifier: "signup_to_tutorial", sender: self)
                             }
                         }
+                        else{
+                            OperationQueue.main.addOperation {
+                                let alert = UIAlertController(title: "Error", message: "Username already taken. Please choose another.", preferredStyle: UIAlertControllerStyle.alert)
+                            
+                            // add an action (button)
+                                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                            
+                            // show the alert
+                                self.present(alert, animated: true, completion: nil)
+                            }
+                        }
                     }
                     task.resume()
                     
@@ -59,6 +70,13 @@ class BefriendSignupViewController: UIViewController{
                     passwordfield2.text = ""
                     passwordfield1.text = ""
                     usernameField.text = ""
+                    let alert = UIAlertController(title: "Error", message: "Passwords do not match.", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
             else{
@@ -66,6 +84,13 @@ class BefriendSignupViewController: UIViewController{
                 passwordfield2.text = ""
                 passwordfield1.text = ""
                 usernameField.text = ""
+                let alert = UIAlertController(title: "Error", message: "You must provide a password.", preferredStyle: UIAlertControllerStyle.alert)
+                
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
             }
         }
         else{
@@ -73,6 +98,13 @@ class BefriendSignupViewController: UIViewController{
             passwordfield2.text = ""
             passwordfield1.text = ""
             usernameField.text = ""
+            let alert = UIAlertController(title: "Error", message: "You must provide a username.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
         
 }

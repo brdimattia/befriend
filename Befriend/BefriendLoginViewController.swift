@@ -29,6 +29,13 @@
                     let task = URLSession.shared.dataTask(with: request) { data, response, error in
                         guard let data = data, error == nil else {
                             print("error=\(error)")
+                            let alert = UIAlertController(title: "Error", message: "Username/Password is incorrect", preferredStyle: UIAlertControllerStyle.alert)
+                            
+                            // add an action (button)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                            
+                            // show the alert
+                            self.present(alert, animated: true, completion: nil)
                             return
                         }
                         
@@ -45,16 +52,43 @@
                                 self.performSegue(withIdentifier:  "login_to_friends", sender: self)
                             }
                         }
+                        else
+                        {
+                            print("error here")
+                            OperationQueue.main.addOperation {
+                            let alert = UIAlertController(title: "Error", message: "Username/Password is incorrect.", preferredStyle: UIAlertControllerStyle.alert)
+                            
+                            // add an action (button)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                            
+                            // show the alert
+                            self.present(alert, animated: true, completion: nil)
+                            }
+                        }
                     }
                     task.resume()
                     
                 }
                 else{
                     print("Must enter a password")
+                    let alert = UIAlertController(title: "Error", message: "You must enter a password.", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
             else{
-                print("Must enter a password")
+                print("Must enter a username")
+                let alert = UIAlertController(title: "Error", message: "You must enter a username.", preferredStyle: UIAlertControllerStyle.alert)
+                
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
             }
             
         }

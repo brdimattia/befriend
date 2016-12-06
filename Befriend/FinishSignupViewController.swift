@@ -76,24 +76,64 @@ class FinishSignupViewController: UIViewController{
                                     self.performSegue(withIdentifier: "tutorial_to_friends", sender: self)
                                 }
                             }
+                            else
+                            {
+                                OperationQueue.main.addOperation {
+                                    let alert = UIAlertController(title: "Oops", message: "Something went wrong. Please make sure all information is entered correctly.", preferredStyle: UIAlertControllerStyle.alert)
+                                    
+                                    // add an action (button)
+                                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                                    
+                                    // show the alert
+                                    self.present(alert, animated: true, completion: nil)
+                                }
+                            }
                         }
                         task.resume()
                         
                     }
                     else{
                         print("Must enter an email")
+                        let alert = UIAlertController(title: "Error", message: "You must provide an email address.", preferredStyle: UIAlertControllerStyle.alert)
+                        
+                        // add an action (button)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                        
+                        // show the alert
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
                 else{
                     print("Must enter a phone number")
+                    let alert = UIAlertController(title: "Error", message: "You must provide a phone number.", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
             else{
                 print("Must enter a birthday")
+                let alert = UIAlertController(title: "Error", message: "You must enter your birthday.", preferredStyle: UIAlertControllerStyle.alert)
+                
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
             }
         }
         else{
             print("Must enter a display name")
+            let alert = UIAlertController(title: "Error", message: "You must enter a display name.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
