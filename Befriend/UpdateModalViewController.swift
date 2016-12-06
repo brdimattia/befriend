@@ -23,16 +23,13 @@ class UpdateModalViewController: UIViewController {
         var postString = "";
         
         if(titleLabel.text == "Update Display Name"){
-            request = URLRequest(url: URL(string: "http://cs.stonehill.edu/befriend/iphone_connect/updateDisplayName.php")!)
-            postString = "displayName=" + textField.text! + "&username=" + appDelegate.METASESSION.username;
+            
         }
         if(titleLabel.text == "Update Email Address"){
-            request = URLRequest(url: URL(string: "http://cs.stonehill.edu/befriend/iphone_connect/updateEmail.php")!)
-            postString = "email=" + textField.text! + "&username=" + appDelegate.METASESSION.username;
+            
         }
         if(titleLabel.text == "Update Phone Number"){
-            request = URLRequest(url: URL(string: "http://cs.stonehill.edu/befriend/iphone_connect/updatePhoneNum.php")!)
-            postString = "phoneNum=" + textField.text! + "&username=" + appDelegate.METASESSION.username;
+            
         }
         
         
