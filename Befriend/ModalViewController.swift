@@ -24,7 +24,6 @@ class ModalViewController: UIViewController {
     @IBOutlet weak var username: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        drawerView.isHidden = true
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         self.showAnimate()
     }
@@ -36,16 +35,7 @@ class ModalViewController: UIViewController {
 
     
     @IBOutlet weak var detailButtonText: UIButton!
-    @IBAction func detailButton(_ sender: Any) {
-        if(drawerView.isHidden){
-            showDetail()
-            detailButtonText.setTitle("Hide Details", for: .normal)
-        }
-        else{
-            hideDetail()
-            detailButtonText.setTitle("Show Details", for: .normal)
-        }
-    }
+
     
     @IBAction func closePopUp(_ sender: Any) {
         self.removeAnimate()
@@ -57,28 +47,6 @@ class ModalViewController: UIViewController {
         
     }
 
-    func showDetail(){
-        drawerView.isHidden = false
-        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {
-            self.drawerView.center.y += self.drawerView.frame.size.height
-        
-        }, completion: { finished in
-        })
-        
-    }
-    
-    func hideDetail(){
-        
-        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
-            self.drawerView.center.y -= self.drawerView.frame.size.height
-            
-        }, completion: { finished in
-            self.drawerView.isHidden = true
-        })
-        
-        
-
-    }
     
     func showAnimate()
     {

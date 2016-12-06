@@ -664,22 +664,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "502746589.173385"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "SettingsExtension"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Befriend/UpdateModalViewController.swift"
             timestampString = "501870720.657926"
             startingColumnNumber = "9223372036854775807"
@@ -1066,99 +1050,6 @@
             endingLineNumber = "64"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Befriend/SettingsExtension.swift"
-            timestampString = "502746273.56956"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "SettingsExtension"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Befriend.SettingsExtension.usernameLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "Befriend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsExtension.swift"
-                  timestampString = "502746273.672706"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Befriend.SettingsExtension.usernameLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "Befriend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsExtension.swift"
-                  timestampString = "502746273.674509"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Befriend.SettingsExtension.init (style : __C.UITableViewStyle) -&gt; Befriend.SettingsExtension"
-                  moduleName = "Befriend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsExtension.swift"
-                  timestampString = "502746273.676153"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "31">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Befriend.SettingsExtension.init (nibName : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, bundle : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.Bundle&gt;) -&gt; Befriend.SettingsExtension"
-                  moduleName = "Befriend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsExtension.swift"
-                  timestampString = "502746273.677874"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "70">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Befriend.SettingsExtension.init (coder : __ObjC.NSCoder) -&gt; Befriend.SettingsExtension"
-                  moduleName = "Befriend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Ben/School/College/Fall%202016/Directed%20Study/befriend/Befriend/SettingsExtension.swift"
-                  timestampString = "502746273.679496"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "31">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

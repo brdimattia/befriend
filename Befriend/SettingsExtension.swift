@@ -11,16 +11,6 @@ import UIKit
 
 
 class SettingsExtension: UITableViewController{
-
-    @IBOutlet weak var usernameLabel: UILabel!
- 
-    @IBOutlet weak var displayNameLabel: UILabel!
-    
-    @IBOutlet weak var birthdayLabel: UILabel!
-    
-    @IBOutlet weak var phoneLabel: UILabel!
-    
-    @IBOutlet weak var emailLabel: UILabel!
     
     var viewParent : SettingsViewController
    
@@ -70,11 +60,12 @@ class SettingsExtension: UITableViewController{
 func getUserInfo(){
     let appDelegate = UIApplication.shared.delegate as!AppDelegate
     
-    self.usernameLabel.text = appDelegate.METASESSION.userStruct.username;
-    self.displayNameLabel.text = appDelegate.METASESSION.userStruct.displayName;
-    self.birthdayLabel.text = appDelegate.METASESSION.userStruct.birthday;
-    self.phoneLabel.text = appDelegate.METASESSION.userStruct.phoneNum;
-    self.emailLabel.text = appDelegate.METASESSION.userStruct.email;
+//    self.usernameLabel.text = appDelegate.METASESSION.userStruct.username;
+//    self.displayNameLabel.text = appDelegate.METASESSION.userStruct.displayName;
+//    self.birthdayLabel.text = appDelegate.METASESSION.userStruct.birthday;
+//    self.phoneLabel.text = appDelegate.METASESSION.userStruct.phoneNum;
+//    self.emailLabel.text = appDelegate.METASESSION.userStruct.email;
+
 }
 
 }
