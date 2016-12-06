@@ -522,13 +522,12 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="birthdayLabel" destination="HLS-i5-rlY" id="COn-fk-eu0"/>
-                        <outlet property="dateLabel" destination="HLS-i5-rlY" id="2fh-LF-xeR"/>
-                        <outlet property="displayNameLabel" destination="MVB-C6-YBD" id="yrJ-nv-JM8"/>
-                        <outlet property="emailLabel" destination="f2f-hr-xhw" id="go9-H5-6vb"/>
+                        <outlet property="birthdayLabel" destination="HLS-i5-rlY" id="aTY-I5-ECz"/>
+                        <outlet property="displayNameLabel" destination="MVB-C6-YBD" id="eCe-X6-7jn"/>
+                        <outlet property="emailLabel" destination="f2f-hr-xhw" id="64c-yq-93K"/>
                         <outlet property="nameCell" destination="pqV-7A-1Hs" id="c3E-UL-E0X"/>
-                        <outlet property="phoneLabel" destination="RmT-7x-RWx" id="sC0-e3-QLf"/>
-                        <outlet property="usernameLabel" destination="1eK-Ob-wTI" id="QJn-e9-mFo"/>
+                        <outlet property="phoneLabel" destination="RmT-7x-RWx" id="diu-oL-l6u"/>
+                        <outlet property="usernameLabel" destination="1eK-Ob-wTI" id="seu-YA-bgz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHz-y5-0Mb" userLabel="First Responder" sceneMemberID="firstResponder"/>

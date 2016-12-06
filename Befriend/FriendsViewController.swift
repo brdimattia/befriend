@@ -91,7 +91,51 @@ extension FriendsViewController : UITableViewDelegate {
         tableView.dataSource = dataSource
         tableView.reloadData()
         tableView.delegate = self;
+        
+        var request = URLRequest(url: URL(string: "http://cs.stonehill.edu/befriend/iphone_connect/getUserInfo.php")!)
+        request.httpMethod = "POST"
+        let postString = "username=" + self.appDelegate.METASESSION.username;
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)!
+            print("responseString = \(responseString)")
+            
+            let result = self.convertStringToDictionary(text: responseString)
+            
+            self.appDelegate.METASESSION.userStruct.username = result!["username"]! as! String;
+            self.appDelegate.METASESSION.userStruct.displayName = result!["displayName"]! as! String;
+            self.appDelegate.METASESSION.userStruct.birthday =  result!["birthday"]! as! String;
+            self.appDelegate.METASESSION.userStruct.phoneNum =  result!["phoneNum"]! as! String;
+            self.appDelegate.METASESSION.userStruct.email = result!["email"]! as! String;
+            self.appDelegate.METASESSION.userStruct.twitterID = result!["twitterID"]! as! String;
+            self.appDelegate.METASESSION.userStruct.pinterestID =  result!["pinterestID"]! as! String;
+            self.appDelegate.METASESSION.userStruct.spotifyID =  result!["spotifyID"]! as! String;
+            
+        }
+        
+        task.resume()
+
     }
     
+    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+        if let data = text.data(using: String.Encoding.utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+            } catch let error as NSError {
+                print(error)
+            }
+        }
+        return nil
+    }
+
 
 }

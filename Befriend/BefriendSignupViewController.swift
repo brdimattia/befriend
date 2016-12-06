@@ -42,6 +42,7 @@ class BefriendSignupViewController: UIViewController{
                         //print("responseString = \(responseString)")
                         if(responseString == Optional("{\"success\":true}")){
                             OperationQueue.main.addOperation {
+                                
                             self.appDelegate.METASESSION.username = self.usernameField.text!
                             self.appDelegate.METASESSION.password = self.passwordfield1.text!;
                             self.performSegue(withIdentifier: "signup_to_tutorial", sender: self)
@@ -92,5 +93,17 @@ override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
 }
+    
+func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+    if let data = text.data(using: String.Encoding.utf8) {
+        do {
+            return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+        } catch let error as NSError {
+                print(error)
+        }
+    }
+    return nil
+}
+
 
 }
