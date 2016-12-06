@@ -267,7 +267,7 @@
             <objects>
                 <tableViewController id="QaX-7K-wmg" customClass="SettingsExtension" customModule="Befriend" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rRK-tH-92n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1875,9 +1875,9 @@
         <image name="twitter" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vzU-l7-LgK"/>
         <segue reference="Z5s-Zf-Pme"/>
-        <segue reference="IwE-yu-Olz"/>
+        <segue reference="7x2-57-Pxx"/>
         <segue reference="w04-WL-x08"/>
+        <segue reference="IwE-yu-Olz"/>
     </inferredMetricsTieBreakers>
 </document>
