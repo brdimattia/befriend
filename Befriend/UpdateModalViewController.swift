@@ -17,10 +17,10 @@ class UpdateModalViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func updateButton(_ sender: Any) {
-        let appDelegate = UIApplication.shared.delegate as!AppDelegate
+        _ = UIApplication.shared.delegate as!AppDelegate
         
         var request = URLRequest(url: URL(string: "http://cs.stonehill.edu/befriend/iphone_connect/")!)
-        var postString = "";
+        let postString = "";
         
         if(titleLabel.text == "Update Display Name"){
             
